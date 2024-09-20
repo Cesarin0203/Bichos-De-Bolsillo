@@ -25,7 +25,7 @@ Partial Class Form1
         components = New System.ComponentModel.Container()
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Me.Text = "Penelope"
     End Sub
 
 End Class
