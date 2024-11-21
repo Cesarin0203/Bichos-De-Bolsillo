@@ -4,8 +4,10 @@
             Dim frm As New InicioSesion
             frm.MdiParent = Bichos_De_Bolsillo
             frm.Show()
-            '' Me.Close()
+            Me.MdiParent.Close()
         End If
 
     End Sub
+
+
 End Class

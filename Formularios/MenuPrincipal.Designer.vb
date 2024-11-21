@@ -28,35 +28,38 @@ Partial Class MenuPrincipal
         ' 
         ' cmd_Empezar
         ' 
+        cmd_Empezar.FlatStyle = FlatStyle.System
         cmd_Empezar.Font = New Font("Comic Sans MS", 20F)
-        cmd_Empezar.Location = New Point(560, 386)
+        cmd_Empezar.Location = New Point(490, 290)
+        cmd_Empezar.Margin = New Padding(3, 2, 3, 2)
         cmd_Empezar.Name = "cmd_Empezar"
-        cmd_Empezar.Size = New Size(200, 72)
+        cmd_Empezar.Size = New Size(175, 54)
         cmd_Empezar.TabIndex = 0
         cmd_Empezar.Text = "Empezar"
         cmd_Empezar.UseVisualStyleBackColor = True
         ' 
         ' Label1
         ' 
-        Label1.AutoSize = True
+        Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        Label1.FlatStyle = FlatStyle.Popup
         Label1.Font = New Font("Comic Sans MS", 40F)
-        Label1.Location = New Point(380, 228)
+        Label1.Location = New Point(332, 171)
         Label1.Name = "Label1"
-        Label1.Size = New Size(585, 95)
+        Label1.Size = New Size(471, 76)
         Label1.TabIndex = 1
         Label1.Text = "Bichos De Bolsillo"
         ' 
         ' MenuPrincipal
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1262, 673)
+        ClientSize = New Size(1104, 505)
         Controls.Add(Label1)
         Controls.Add(cmd_Empezar)
         FormBorderStyle = FormBorderStyle.FixedDialog
+        Margin = New Padding(3, 2, 3, 2)
         Name = "MenuPrincipal"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents cmd_Empezar As Button
