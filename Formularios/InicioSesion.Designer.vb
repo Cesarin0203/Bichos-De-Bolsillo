@@ -27,7 +27,7 @@ Partial Class InicioSesion
         Label1 = New Label()
         Label2 = New Label()
         txt_Usuario = New TextBox()
-        TextBox1 = New TextBox()
+        txt_Contrasena = New TextBox()
         Button1 = New Button()
         Button2 = New Button()
         SuspendLayout()
@@ -35,9 +35,9 @@ Partial Class InicioSesion
         ' lbConnectionStatus
         ' 
         lbConnectionStatus.AutoSize = True
-        lbConnectionStatus.Location = New Point(12, 483)
+        lbConnectionStatus.Location = New Point(10, 362)
         lbConnectionStatus.Name = "lbConnectionStatus"
-        lbConnectionStatus.Size = New Size(152, 20)
+        lbConnectionStatus.Size = New Size(122, 15)
         lbConnectionStatus.TabIndex = 5
         lbConnectionStatus.Text = "Esperando conexión..."
         ' 
@@ -45,9 +45,9 @@ Partial Class InicioSesion
         ' 
         Header.AutoSize = True
         Header.Font = New Font("Segoe UI", 28F)
-        Header.Location = New Point(100, 32)
+        Header.Location = New Point(93, 24)
         Header.Name = "Header"
-        Header.Size = New Size(195, 62)
+        Header.Size = New Size(158, 51)
         Header.TabIndex = 6
         Header.Text = "Acceder"
         ' 
@@ -55,9 +55,9 @@ Partial Class InicioSesion
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F)
-        Label1.Location = New Point(51, 121)
+        Label1.Location = New Point(45, 91)
         Label1.Name = "Label1"
-        Label1.Size = New Size(83, 28)
+        Label1.Size = New Size(67, 21)
         Label1.TabIndex = 0
         Label1.Text = "Usuario:"
         ' 
@@ -65,58 +65,63 @@ Partial Class InicioSesion
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F)
-        Label2.Location = New Point(51, 207)
+        Label2.Location = New Point(45, 155)
         Label2.Name = "Label2"
-        Label2.Size = New Size(114, 28)
+        Label2.Size = New Size(92, 21)
         Label2.TabIndex = 1
         Label2.Text = "Contraseña:"
         ' 
         ' txt_Usuario
         ' 
-        txt_Usuario.Location = New Point(51, 152)
+        txt_Usuario.Location = New Point(45, 114)
+        txt_Usuario.Margin = New Padding(3, 2, 3, 2)
         txt_Usuario.Name = "txt_Usuario"
-        txt_Usuario.Size = New Size(292, 27)
+        txt_Usuario.Size = New Size(256, 23)
         txt_Usuario.TabIndex = 2
         ' 
-        ' TextBox1
+        ' txt_Contrasena
         ' 
-        TextBox1.Location = New Point(51, 238)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(292, 27)
-        TextBox1.TabIndex = 3
+        txt_Contrasena.Location = New Point(45, 178)
+        txt_Contrasena.Margin = New Padding(3, 2, 3, 2)
+        txt_Contrasena.Name = "txt_Contrasena"
+        txt_Contrasena.Size = New Size(256, 23)
+        txt_Contrasena.TabIndex = 3
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(76, 303)
+        Button1.Location = New Point(66, 227)
+        Button1.Margin = New Padding(3, 2, 3, 2)
         Button1.Name = "Button1"
-        Button1.Size = New Size(118, 29)
+        Button1.Size = New Size(103, 29)
         Button1.TabIndex = 4
         Button1.Text = "Iniciar sesión"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(200, 303)
+        Button2.Location = New Point(175, 227)
+        Button2.Margin = New Padding(3, 2, 3, 2)
         Button2.Name = "Button2"
-        Button2.Size = New Size(118, 29)
+        Button2.Size = New Size(103, 29)
         Button2.TabIndex = 7
         Button2.Text = "Registrarse"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' InicioSesion
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(394, 512)
+        ClientSize = New Size(345, 384)
         Controls.Add(Button2)
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
         Controls.Add(Button1)
-        Controls.Add(TextBox1)
+        Controls.Add(txt_Contrasena)
         Controls.Add(txt_Usuario)
         Controls.Add(Label2)
         Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.FixedDialog
+        Margin = New Padding(3, 2, 3, 2)
         Name = "InicioSesion"
         StartPosition = FormStartPosition.CenterScreen
         ResumeLayout(False)
@@ -127,7 +132,7 @@ Partial Class InicioSesion
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txt_Usuario As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_Contrasena As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
 End Class

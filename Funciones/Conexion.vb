@@ -34,8 +34,21 @@ Public Class Conexion
         Parametros.Password = strPassword
         Parametros.Base_Datos = strBase_Datos
         Conexion = New SqlConnection()
-        Conexion.ConnectionString = String.Format("Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3};MultipleActiveResultSets=True", strServidor, strBase_Datos, strUsuario, strPassword)
+        'Conexion.ConnectionString = String.Format("Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3};MultipleActiveResultSets=True", strServidor, strBase_Datos, strUsuario, strPassword)
+        Conexion.ConnectionString = String.Format("server={0};Initial Catalog={1};Persist Security Info=True;TrustServerCertificate=False;User ID={2};Password={3};MultipleActiveResultSets=True",
+            strServidor,
+            strBase_Datos,
+            strUsuario,
+            strPassword)
     End Sub
+    Public Function TestConexion() As Boolean
+        Try
+            Conexion.Open()
+        Catch ex As Exception
+            Return False
+        End Try
+        Return True
+    End Function
     Public Function Comando_Query(ByVal SQL As String) As Integer
         Try
             Dim comando As New SqlCommand(SQL, lConexion.Conexion, lConexion.Transaccion)
