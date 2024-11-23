@@ -23,43 +23,52 @@ Partial Class MenuPrincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         cmd_Empezar = New Button()
-        Label1 = New Label()
+        lbTitulo = New Label()
         SuspendLayout()
         ' 
         ' cmd_Empezar
         ' 
+        cmd_Empezar.Anchor = AnchorStyles.None
         cmd_Empezar.FlatStyle = FlatStyle.System
         cmd_Empezar.Font = New Font("Comic Sans MS", 20F)
-        cmd_Empezar.Location = New Point(560, 387)
+        cmd_Empezar.Location = New Point(465, 309)
+        cmd_Empezar.Margin = New Padding(3, 2, 3, 2)
+        cmd_Empezar.MaximumSize = New Size(175, 54)
+        cmd_Empezar.MinimumSize = New Size(175, 54)
         cmd_Empezar.Name = "cmd_Empezar"
-        cmd_Empezar.Size = New Size(200, 72)
+        cmd_Empezar.Size = New Size(175, 54)
         cmd_Empezar.TabIndex = 0
         cmd_Empezar.Text = "Empezar"
         cmd_Empezar.UseVisualStyleBackColor = True
         ' 
-        ' Label1
+        ' lbTitulo
         ' 
-        Label1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
-        Label1.FlatStyle = FlatStyle.Popup
-        Label1.Font = New Font("Comic Sans MS", 40F)
-        Label1.Location = New Point(362, 237)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(591, 101)
-        Label1.TabIndex = 1
-        Label1.Text = "Bichos De Bolsillo"
+        lbTitulo.Anchor = AnchorStyles.None
+        lbTitulo.FlatStyle = FlatStyle.Popup
+        lbTitulo.Font = New Font("Comic Sans MS", 40F)
+        lbTitulo.Location = New Point(315, 197)
+        lbTitulo.Margin = New Padding(0)
+        lbTitulo.MaximumSize = New Size(475, 80)
+        lbTitulo.MinimumSize = New Size(475, 80)
+        lbTitulo.Name = "lbTitulo"
+        lbTitulo.Size = New Size(475, 80)
+        lbTitulo.TabIndex = 1
+        lbTitulo.Text = "Bichos De Bolsillo"
+        lbTitulo.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' MenuPrincipal
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1262, 673)
-        Controls.Add(Label1)
+        ClientSize = New Size(1104, 561)
+        Controls.Add(lbTitulo)
         Controls.Add(cmd_Empezar)
-        FormBorderStyle = FormBorderStyle.FixedDialog
+        Margin = New Padding(3, 2, 3, 2)
+        MinimumSize = New Size(500, 250)
         Name = "MenuPrincipal"
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents cmd_Empezar As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbTitulo As Label
 End Class

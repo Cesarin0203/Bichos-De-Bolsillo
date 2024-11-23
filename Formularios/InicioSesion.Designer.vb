@@ -35,7 +35,7 @@ Partial Class InicioSesion
         ' lbConnectionStatus
         ' 
         lbConnectionStatus.AutoSize = True
-        lbConnectionStatus.Location = New Point(10, 362)
+        lbConnectionStatus.Location = New Point(12, 357)
         lbConnectionStatus.Name = "lbConnectionStatus"
         lbConnectionStatus.Size = New Size(122, 15)
         lbConnectionStatus.TabIndex = 5
@@ -45,7 +45,7 @@ Partial Class InicioSesion
         ' 
         Header.AutoSize = True
         Header.Font = New Font("Segoe UI", 28F)
-        Header.Location = New Point(93, 24)
+        Header.Location = New Point(93, 31)
         Header.Name = "Header"
         Header.Size = New Size(158, 51)
         Header.TabIndex = 6
@@ -55,7 +55,7 @@ Partial Class InicioSesion
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F)
-        Label1.Location = New Point(45, 91)
+        Label1.Location = New Point(45, 104)
         Label1.Name = "Label1"
         Label1.Size = New Size(67, 21)
         Label1.TabIndex = 0
@@ -65,7 +65,7 @@ Partial Class InicioSesion
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F)
-        Label2.Location = New Point(45, 155)
+        Label2.Location = New Point(43, 168)
         Label2.Name = "Label2"
         Label2.Size = New Size(92, 21)
         Label2.TabIndex = 1
@@ -73,7 +73,7 @@ Partial Class InicioSesion
         ' 
         ' txt_Usuario
         ' 
-        txt_Usuario.Location = New Point(45, 114)
+        txt_Usuario.Location = New Point(45, 127)
         txt_Usuario.Margin = New Padding(3, 2, 3, 2)
         txt_Usuario.Name = "txt_Usuario"
         txt_Usuario.Size = New Size(256, 23)
@@ -81,7 +81,7 @@ Partial Class InicioSesion
         ' 
         ' txt_Contrasena
         ' 
-        txt_Contrasena.Location = New Point(45, 178)
+        txt_Contrasena.Location = New Point(45, 191)
         txt_Contrasena.Margin = New Padding(3, 2, 3, 2)
         txt_Contrasena.Name = "txt_Contrasena"
         txt_Contrasena.Size = New Size(256, 23)
@@ -89,7 +89,7 @@ Partial Class InicioSesion
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(66, 227)
+        Button1.Location = New Point(66, 240)
         Button1.Margin = New Padding(3, 2, 3, 2)
         Button1.Name = "Button1"
         Button1.Size = New Size(103, 29)
@@ -99,7 +99,7 @@ Partial Class InicioSesion
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(175, 227)
+        Button2.Location = New Point(175, 240)
         Button2.Margin = New Padding(3, 2, 3, 2)
         Button2.Name = "Button2"
         Button2.Size = New Size(103, 29)
@@ -111,7 +111,7 @@ Partial Class InicioSesion
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(345, 384)
+        ClientSize = New Size(344, 381)
         Controls.Add(Button2)
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
