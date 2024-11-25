@@ -86,6 +86,7 @@ Partial Class InicioSesion
         txt_Contrasena.Name = "txt_Contrasena"
         txt_Contrasena.Size = New Size(256, 23)
         txt_Contrasena.TabIndex = 3
+        txt_Contrasena.UseSystemPasswordChar = True
         ' 
         ' Button1
         ' 

@@ -1,6 +1,7 @@
-﻿Public Class Usuario
+﻿Public Module Usuario
     Public Property Servidor As String = ""
     Public Property ContraseñaBD As String = ""
     Public Property UsuarioBD As String = ""
     Public Property BD As String = ""
-End Class
+    Public Property UsuarioApp As String = ""
+End Module
