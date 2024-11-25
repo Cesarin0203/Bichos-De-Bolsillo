@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports Microsoft.Data
 
 Public Module DeclaracionFunciones
     Public lConexion As Conexion
@@ -6,7 +7,6 @@ Public Module DeclaracionFunciones
 
     Public Function CargaConfiguracion() As Boolean
         Try
-
             Usuario.Servidor = "erick-server.database.windows.net"
             Usuario.UsuarioBD = "jugador1"
             Usuario.ContraseñaBD = "%12player34"
