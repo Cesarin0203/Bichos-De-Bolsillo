@@ -5,4 +5,5 @@
     Public Property BD As String = ""
     Public Property UsuarioApp As String = ""
     Public Property ContrasenaApp As String = ""
+
 End Module
