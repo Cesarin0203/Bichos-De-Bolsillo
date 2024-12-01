@@ -1,5 +1,5 @@
 ﻿Public Class InicioSesion
-    Dim Sql As New Consultas
+    Dim query As New Consultas
     Private Sub InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CargaConfiguracion()
 
@@ -16,16 +16,20 @@
 
     Private Sub cmd_iniciasesion_Click(sender As Object, e As EventArgs) Handles cmd_iniciasesion.Click
         Try
-            If Sql.ValidarInicioSesion(Me.txt_Usuario.Text, Me.txt_Contrasena.Text) Then
+            Usuario.IdApp = query.ValidarInicioSesion(Me.txt_Usuario.Text, Me.txt_Contrasena.Text)
+            If Not (Usuario.IdApp = -1) Then
                 Usuario.UsuarioApp = Me.txt_Usuario.Text
-                Usuario.ContrasenaApp = Me.txt_Contrasena.Text
-                lbConnectionStatus.Text = "Inicio de sesión exitoso."
-                If FormAbierto("PantallaPrincipal") = False Then
-                    Dim frm As New PantallaPrincipal
-                    frm.MdiParent = Bichos_De_Bolsillo
+                'Usuario.ContrasenaApp = Me.txt_Contrasena.Text
+                lbConnectionStatus.Text = $"Inicio de sesión exitoso. Id = {Usuario.IdApp}"
+                If FormAbierto("InicioJuego") = False Then
+                    Dim frm As New InicioJuego
+                    'frm.MdiParent = My.Forms.MenuPrincipal
                     frm.Show()
-                    Me.Hide()
+                    Me.Close()
+                    My.Forms.MenuPrincipal.Hide()
                 End If
+            Else
+                lbConnectionStatus.Text = "Ocurrió un error al intentar acceder."
             End If
         Catch ex As Exception
             lbConnectionStatus.Text = ex.Message
