@@ -28,7 +28,7 @@ Partial Class InicioSesion
         Label2 = New Label()
         txt_Usuario = New TextBox()
         txt_Contrasena = New TextBox()
-        Button1 = New Button()
+        cmd_iniciasesion = New Button()
         Button2 = New Button()
         SuspendLayout()
         ' 
@@ -88,15 +88,15 @@ Partial Class InicioSesion
         txt_Contrasena.TabIndex = 3
         txt_Contrasena.UseSystemPasswordChar = True
         ' 
-        ' Button1
+        ' cmd_iniciasesion
         ' 
-        Button1.Location = New Point(66, 240)
-        Button1.Margin = New Padding(3, 2, 3, 2)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(103, 29)
-        Button1.TabIndex = 4
-        Button1.Text = "Iniciar sesión"
-        Button1.UseVisualStyleBackColor = True
+        cmd_iniciasesion.Location = New Point(66, 240)
+        cmd_iniciasesion.Margin = New Padding(3, 2, 3, 2)
+        cmd_iniciasesion.Name = "cmd_iniciasesion"
+        cmd_iniciasesion.Size = New Size(103, 29)
+        cmd_iniciasesion.TabIndex = 4
+        cmd_iniciasesion.Text = "Iniciar sesión"
+        cmd_iniciasesion.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
@@ -116,7 +116,7 @@ Partial Class InicioSesion
         Controls.Add(Button2)
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
-        Controls.Add(Button1)
+        Controls.Add(cmd_iniciasesion)
         Controls.Add(txt_Contrasena)
         Controls.Add(txt_Usuario)
         Controls.Add(Label2)
@@ -136,4 +136,5 @@ Partial Class InicioSesion
     Friend WithEvents txt_Contrasena As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents cmd_iniciasesion As Button
 End Class

@@ -6,7 +6,7 @@ Public Class MenuPrincipal
             Dim frm As New InicioSesion
             frm.MdiParent = Bichos_De_Bolsillo
             frm.Show()
-            'Hide()
+            Me.Hide()
         End If
 
     End Sub

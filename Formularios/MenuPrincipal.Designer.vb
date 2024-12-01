@@ -29,8 +29,10 @@ Partial Class MenuPrincipal
         ' cmd_Empezar
         ' 
         cmd_Empezar.Anchor = AnchorStyles.None
-        cmd_Empezar.FlatStyle = FlatStyle.System
-        cmd_Empezar.Font = New Font("Comic Sans MS", 20F)
+        cmd_Empezar.FlatAppearance.BorderSize = 0
+        cmd_Empezar.FlatStyle = FlatStyle.Flat
+        cmd_Empezar.Font = New Font("Snap ITC", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Empezar.ForeColor = Color.Red
         cmd_Empezar.Location = New Point(465, 309)
         cmd_Empezar.Margin = New Padding(3, 2, 3, 2)
         cmd_Empezar.MaximumSize = New Size(175, 54)
@@ -45,13 +47,14 @@ Partial Class MenuPrincipal
         ' 
         lbTitulo.Anchor = AnchorStyles.None
         lbTitulo.FlatStyle = FlatStyle.Popup
-        lbTitulo.Font = New Font("Comic Sans MS", 40F)
-        lbTitulo.Location = New Point(315, 197)
+        lbTitulo.Font = New Font("Snap ITC", 39.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbTitulo.ForeColor = Color.Goldenrod
+        lbTitulo.Location = New Point(305, 197)
         lbTitulo.Margin = New Padding(0)
-        lbTitulo.MaximumSize = New Size(475, 80)
-        lbTitulo.MinimumSize = New Size(475, 80)
+        lbTitulo.MaximumSize = New Size(567, 80)
+        lbTitulo.MinimumSize = New Size(567, 80)
         lbTitulo.Name = "lbTitulo"
-        lbTitulo.Size = New Size(475, 80)
+        lbTitulo.Size = New Size(567, 80)
         lbTitulo.TabIndex = 1
         lbTitulo.Text = "Bichos De Bolsillo"
         lbTitulo.TextAlign = ContentAlignment.MiddleCenter
