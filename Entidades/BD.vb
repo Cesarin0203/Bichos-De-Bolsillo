@@ -172,6 +172,23 @@ Public Class BD
             End Try
         End Function
 
+        Public Function ActualizarLider(ByVal Transaccion As SqlTransaction) As Boolean
+            Try
+                If Transaccion IsNot Nothing Then
+                    If lConexion.Comando_Query($"update Gimnasio set ID_Lider='{ID_Lider}' where ID = {ID}", Transaccion) <= 0 Then
+                        Throw New Exception("Ocurrio un error al actualizar el producto")
+                    End If
+                Else
+                    If lConexion.Comando_Query($"update Gimnasio set ID_Lider='{ID_Lider}' where ID = {ID}") <= 0 Then
+                        Throw New Exception("Ocurrio un error al actualizar el producto")
+                    End If
+                End If
+                Return True
+            Catch ex As Exception
+                Throw New Exception(ex.Message)
+            End Try
+        End Function
+
         'DELETE
         Public Function Eliminar() As Boolean
             Try
