@@ -35,4 +35,13 @@
             lbConnectionStatus.Text = ex.Message
         End Try
     End Sub
+
+    Private Sub cmdRegistrarse_Click(sender As Object, e As EventArgs) Handles cmdRegistrarse.Click
+        If FormAbierto("RegistroUsuario") = False Then
+            Dim frm As New RegistroUsuario
+            'frm.MdiParent = My.Forms.InicioSesion
+            frm.Show()
+            Me.Hide()
+        End If
+    End Sub
 End Class
