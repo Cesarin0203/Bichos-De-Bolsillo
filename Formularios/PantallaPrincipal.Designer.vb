@@ -127,7 +127,7 @@ Partial Class PantallaPrincipal
         ' 
         cmd_MisPokemones.FlatAppearance.BorderSize = 0
         cmd_MisPokemones.FlatStyle = FlatStyle.Flat
-        cmd_MisPokemones.Font = New Font("Snap ITC", 14.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_MisPokemones.Font = New Font("Snap ITC", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_MisPokemones.ForeColor = Color.Red
         cmd_MisPokemones.Location = New Point(587, 439)
         cmd_MisPokemones.Name = "cmd_MisPokemones"

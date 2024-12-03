@@ -9,14 +9,14 @@
         Catch ex As Exception
             lbConnectionStatus.Text = "Ocurrió un error de conexión. Intente de nuevo más tarde"
             txt_Usuario.Enabled = False
-            txt_Contrasena.Enabled = False
+            txt_Contasena.Enabled = False
         End Try
     End Sub
 
 
     Private Sub cmd_iniciasesion_Click(sender As Object, e As EventArgs) Handles cmdIniciarSesion.Click
         Try
-            Usuario.IdApp = query.ValidarInicioSesion(Me.txt_Usuario.Text, Me.txt_Contrasena.Text)
+            Usuario.IdApp = query.ValidarInicioSesion(Me.txt_Usuario.Text, Me.txt_Contasena.Text)
             If Not (Usuario.IdApp = -1) Then
                 Usuario.UsuarioApp = Me.txt_Usuario.Text
                 'Usuario.ContrasenaApp = Me.txt_Contrasena.Text

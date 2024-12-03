@@ -27,7 +27,7 @@ Partial Class InicioSesion
         Label1 = New Label()
         Label2 = New Label()
         txt_Usuario = New TextBox()
-        txt_Contrasena = New TextBox()
+        txt_Contasena = New TextBox()
         cmdIniciarSesion = New Button()
         cmdRegistrarse = New Button()
         SuspendLayout()
@@ -79,14 +79,14 @@ Partial Class InicioSesion
         txt_Usuario.Size = New Size(256, 23)
         txt_Usuario.TabIndex = 1
         ' 
-        ' txt_Contrasena
+        ' txt_Contasena
         ' 
-        txt_Contrasena.Location = New Point(45, 191)
-        txt_Contrasena.Margin = New Padding(3, 2, 3, 2)
-        txt_Contrasena.Name = "txt_Contrasena"
-        txt_Contrasena.Size = New Size(256, 23)
-        txt_Contrasena.TabIndex = 2
-        txt_Contrasena.UseSystemPasswordChar = True
+        txt_Contasena.Location = New Point(45, 191)
+        txt_Contasena.Margin = New Padding(3, 2, 3, 2)
+        txt_Contasena.Name = "txt_Contasena"
+        txt_Contasena.Size = New Size(256, 23)
+        txt_Contasena.TabIndex = 2
+        txt_Contasena.UseSystemPasswordChar = True
         ' 
         ' cmdIniciarSesion
         ' 
@@ -120,7 +120,7 @@ Partial Class InicioSesion
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
         Controls.Add(cmdIniciarSesion)
-        Controls.Add(txt_Contrasena)
+        Controls.Add(txt_Contasena)
         Controls.Add(txt_Usuario)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -136,7 +136,7 @@ Partial Class InicioSesion
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txt_Usuario As TextBox
-    Friend WithEvents txt_Contrasena As TextBox
+    Friend WithEvents txt_Contasena As TextBox
     Friend WithEvents cmdIniciarSesion As Button
     Friend WithEvents cmdRegistrarse As Button
 End Class

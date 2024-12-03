@@ -34,4 +34,16 @@
             MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
         End Try
     End Sub
+
+    Private Sub cmd_MisPokemones_Click(sender As Object, e As EventArgs) Handles cmd_MisPokemones.Click
+        Try
+            If FormAbierto("MisPokemones") = False Then
+                Dim frm As New MisPokemones
+                frm.MdiParent = Bichos_De_Bolsillo
+                frm.Show()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
+        End Try
+    End Sub
 End Class

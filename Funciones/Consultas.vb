@@ -35,7 +35,7 @@
                FROM GIMNASIO G 
                LEFT JOIN admin.USUARIO U ON G.ID_Lider = U.ID")
         If tabla.Rows.Count <= 0 Then
-            MsgBox("No hay gimnasios", "Close", MessageBoxButtons.OK)
+            MsgBox("No hay gimnasios", MsgBoxStyle.OkOnly, "Advertencia")
             Return tabla
         Else
             Return tabla
@@ -48,7 +48,7 @@
                 FROM GIMNASIO G 
                 WHERE ID_Lider IS NULL")
         If tabla.Rows.Count <= 0 Then
-            MsgBox("No hay gimnasios para liderar", "Advertencia", MessageBoxButtons.OK)
+            MsgBox("No hay gimnasios para liderar", MsgBoxStyle.OkOnly, "Advertencia")
             Return tabla
         Else
             Return tabla
@@ -62,7 +62,24 @@
                 Inner JOIN atributo.ATKCARGADO AC on E.ID_Atkcargado = AC.ID
                 Inner JOIN atributo.ATKRAPIDO AR on E.ID_Atkrapido = AR.ID")
         If tabla.Rows.Count <= 0 Then
-            MsgBox("No hay pokemones", "Advertencia", MessageBoxButtons.OK)
+            MsgBox("No hay pokemones", MsgBoxStyle.OkOnly, "Advertencia")
+            Return tabla
+        Else
+            Return tabla
+        End If
+    End Function
+    Public Function TraerMisPokemones(ByVal ID As Integer) As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"select P.uuid as ID,P.Nivel as Nivel, E.ID_Evolucion as Evolucion,P.Nombre, T.Nombre as Tipo ,P.Puntos_HP as Vida,P.Poder_CombateMax as CombateMaximo,P.Poder_Ataque as Ataque,P.Poder_Defensa as Defensa, AR.Nombre as ATKRAPIDO, AC.Nombre as ATKCARGADO 
+                From Pokemon P 
+                inner JOIN atributo.ESPECIE E on P.ID_Especie = E.ID
+                Inner JOIN atributo.TIPO T on E.ID_Tipo = T.ID
+                Inner JOIN atributo.ATKCARGADO AC on E.ID_Atkcargado = AC.ID
+                Inner JOIN atributo.ATKRAPIDO AR on E.ID_Atkrapido = AR.ID
+                WHERE P.ID_Usuario = {ID}")
+        If tabla.Rows.Count <= 0 Then
+            MsgBox("No cuentas con pokemones", MsgBoxStyle.OkOnly, "Advertencia")
+
             Return tabla
         Else
             Return tabla
