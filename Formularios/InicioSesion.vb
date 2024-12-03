@@ -14,15 +14,15 @@
     End Sub
 
 
-    Private Sub cmd_iniciasesion_Click(sender As Object, e As EventArgs) Handles cmd_iniciasesion.Click
+    Private Sub cmd_iniciasesion_Click(sender As Object, e As EventArgs) Handles cmdIniciarSesion.Click
         Try
             Usuario.IdApp = query.ValidarInicioSesion(Me.txt_Usuario.Text, Me.txt_Contrasena.Text)
             If Not (Usuario.IdApp = -1) Then
                 Usuario.UsuarioApp = Me.txt_Usuario.Text
                 'Usuario.ContrasenaApp = Me.txt_Contrasena.Text
                 lbConnectionStatus.Text = $"Inicio de sesión exitoso. Id = {Usuario.IdApp}"
-                If FormAbierto("InicioJuego") = False Then
-                    Dim frm As New InicioJuego
+                If FormAbierto("PantallaPrincipal") = False Then
+                    Dim frm As New PantallaPrincipal
                     'frm.MdiParent = My.Forms.MenuPrincipal
                     frm.Show()
                     Me.Close()

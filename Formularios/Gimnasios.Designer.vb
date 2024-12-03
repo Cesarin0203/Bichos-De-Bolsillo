@@ -22,152 +22,164 @@ Partial Class Gimnasios
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        GroupBox2 = New GroupBox()
-        TextBox2 = New TextBox()
-        Label3 = New Label()
-        TextBox1 = New TextBox()
         Label2 = New Label()
-        TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
         Label1 = New Label()
-        Button1 = New Button()
-        GroupBox2.SuspendLayout()
+        cmd_Atras = New Button()
+        lv_TusGimnasios = New ListView()
+        ColumnHeader1 = New ColumnHeader()
+        ColumnHeader2 = New ColumnHeader()
+        ColumnHeader3 = New ColumnHeader()
+        lv_TodosLosGimnasios = New ListView()
+        ColumnHeader4 = New ColumnHeader()
+        ColumnHeader5 = New ColumnHeader()
+        ColumnHeader6 = New ColumnHeader()
+        Label3 = New Label()
+        liderar = New Button()
         SuspendLayout()
-        ' 
-        ' GroupBox2
-        ' 
-        GroupBox2.BackColor = Color.Yellow
-        GroupBox2.Controls.Add(TextBox2)
-        GroupBox2.Controls.Add(Label3)
-        GroupBox2.Controls.Add(TextBox1)
-        GroupBox2.Controls.Add(Label2)
-        GroupBox2.Controls.Add(TextBox4)
-        GroupBox2.Controls.Add(TextBox3)
-        GroupBox2.Location = New Point(44, 117)
-        GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(1017, 416)
-        GroupBox2.TabIndex = 2
-        GroupBox2.TabStop = False
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.BackColor = SystemColors.MenuHighlight
-        TextBox2.BorderStyle = BorderStyle.None
-        TextBox2.Font = New Font("Segoe UI Black", 26.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        TextBox2.ForeColor = SystemColors.Window
-        TextBox2.Location = New Point(18, 221)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(924, 47)
-        TextBox2.TabIndex = 10
-        TextBox2.Text = "Info del Gimnasio"
-        ' 
-        ' Label3
-        ' 
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Segoe UI Black", 18F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.RoyalBlue
-        Label3.Location = New Point(18, 174)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(229, 26)
-        Label3.TabIndex = 9
-        Label3.Text = "Tus Gimnasios"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.BackColor = SystemColors.MenuHighlight
-        TextBox1.BorderStyle = BorderStyle.None
-        TextBox1.Font = New Font("Segoe UI Black", 26.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = SystemColors.Window
-        TextBox1.Location = New Point(18, 67)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(924, 47)
-        TextBox1.TabIndex = 8
-        TextBox1.Text = "Info del Gimnasio"
         ' 
         ' Label2
         ' 
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI Black", 18F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.RoyalBlue
-        Label2.Location = New Point(18, 19)
+        Label2.Location = New Point(92, 58)
         Label2.Name = "Label2"
-        Label2.Size = New Size(229, 26)
+        Label2.Size = New Size(229, 31)
         Label2.TabIndex = 7
         Label2.Text = "Tus Gimnasios"
         ' 
-        ' TextBox4
-        ' 
-        TextBox4.BackColor = SystemColors.MenuHighlight
-        TextBox4.BorderStyle = BorderStyle.None
-        TextBox4.Font = New Font("Segoe UI Black", 26.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        TextBox4.ForeColor = SystemColors.Window
-        TextBox4.Location = New Point(18, 363)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(924, 47)
-        TextBox4.TabIndex = 6
-        TextBox4.Text = "Info del Gimnasio"
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.BackColor = SystemColors.MenuHighlight
-        TextBox3.BorderStyle = BorderStyle.None
-        TextBox3.Font = New Font("Segoe UI Black", 26.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        TextBox3.ForeColor = SystemColors.Window
-        TextBox3.Location = New Point(18, 293)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(924, 47)
-        TextBox3.TabIndex = 5
-        TextBox3.Text = "Info del Gimnasio"
-        ' 
         ' Label1
         ' 
-        Label1.BackColor = Color.Red
+        Label1.BackColor = Color.Transparent
         Label1.FlatStyle = FlatStyle.Flat
-        Label1.Font = New Font("Segoe UI Black", 24F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.Snow
-        Label1.Location = New Point(458, 28)
+        Label1.Font = New Font("Snap ITC", 24F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Red
+        Label1.Location = New Point(97, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(603, 58)
+        Label1.Size = New Size(386, 47)
         Label1.TabIndex = 4
         Label1.Text = "Lista de Gimnasios"
         Label1.TextAlign = ContentAlignment.TopRight
         ' 
-        ' Button1
+        ' cmd_Atras
         ' 
-        Button1.AccessibleDescription = "btn_Atras"
-        Button1.BackColor = Color.MediumSpringGreen
-        Button1.Font = New Font("Segoe UI Black", 14.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ButtonHighlight
-        Button1.Location = New Point(44, 28)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(126, 37)
-        Button1.TabIndex = 3
-        Button1.Text = "<---Atras"
-        Button1.UseVisualStyleBackColor = False
+        cmd_Atras.AccessibleDescription = "btn_Atras"
+        cmd_Atras.BackColor = Color.Transparent
+        cmd_Atras.FlatAppearance.BorderSize = 0
+        cmd_Atras.FlatStyle = FlatStyle.Flat
+        cmd_Atras.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Atras.ForeColor = SystemColors.ActiveCaptionText
+        cmd_Atras.Location = New Point(2, 12)
+        cmd_Atras.Name = "cmd_Atras"
+        cmd_Atras.Size = New Size(89, 30)
+        cmd_Atras.TabIndex = 3
+        cmd_Atras.Text = "Atras"
+        cmd_Atras.UseVisualStyleBackColor = False
+        ' 
+        ' lv_TusGimnasios
+        ' 
+        lv_TusGimnasios.Columns.AddRange(New ColumnHeader() {ColumnHeader1, ColumnHeader2, ColumnHeader3})
+        lv_TusGimnasios.Location = New Point(97, 92)
+        lv_TusGimnasios.Name = "lv_TusGimnasios"
+        lv_TusGimnasios.Size = New Size(328, 114)
+        lv_TusGimnasios.TabIndex = 8
+        lv_TusGimnasios.UseCompatibleStateImageBehavior = False
+        lv_TusGimnasios.View = View.Details
+        ' 
+        ' ColumnHeader1
+        ' 
+        ColumnHeader1.Text = "ID"
+        ' 
+        ' ColumnHeader2
+        ' 
+        ColumnHeader2.Text = "Nombre"
+        ColumnHeader2.Width = 150
+        ' 
+        ' ColumnHeader3
+        ' 
+        ColumnHeader3.Text = "Lider"
+        ColumnHeader3.Width = 100
+        ' 
+        ' lv_TodosLosGimnasios
+        ' 
+        lv_TodosLosGimnasios.Columns.AddRange(New ColumnHeader() {ColumnHeader4, ColumnHeader5, ColumnHeader6})
+        lv_TodosLosGimnasios.Location = New Point(97, 240)
+        lv_TodosLosGimnasios.Name = "lv_TodosLosGimnasios"
+        lv_TodosLosGimnasios.Size = New Size(328, 217)
+        lv_TodosLosGimnasios.TabIndex = 10
+        lv_TodosLosGimnasios.UseCompatibleStateImageBehavior = False
+        lv_TodosLosGimnasios.View = View.Details
+        ' 
+        ' ColumnHeader4
+        ' 
+        ColumnHeader4.Text = "ID"
+        ' 
+        ' ColumnHeader5
+        ' 
+        ColumnHeader5.Text = "Nombre"
+        ColumnHeader5.Width = 150
+        ' 
+        ' ColumnHeader6
+        ' 
+        ColumnHeader6.Text = "Lider"
+        ColumnHeader6.Width = 100
+        ' 
+        ' Label3
+        ' 
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Segoe UI Black", 18F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.RoyalBlue
+        Label3.Location = New Point(92, 206)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(333, 31)
+        Label3.TabIndex = 9
+        Label3.Text = "Todos los Gimnasios"
+        ' 
+        ' liderar
+        ' 
+        liderar.AccessibleDescription = "btn_Atras"
+        liderar.BackColor = Color.Transparent
+        liderar.FlatAppearance.BorderSize = 0
+        liderar.FlatStyle = FlatStyle.System
+        liderar.Font = New Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        liderar.ForeColor = SystemColors.ActiveCaptionText
+        liderar.Location = New Point(158, 463)
+        liderar.Name = "liderar"
+        liderar.Size = New Size(267, 30)
+        liderar.TabIndex = 11
+        liderar.Text = "Liderar Nuevo Gimnasio"
+        liderar.UseVisualStyleBackColor = False
         ' 
         ' Gimnasios
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.ActiveCaptionText
-        ClientSize = New Size(1104, 561)
-        Controls.Add(GroupBox2)
+        BackColor = SystemColors.Control
+        ClientSize = New Size(552, 535)
+        Controls.Add(liderar)
+        Controls.Add(lv_TodosLosGimnasios)
+        Controls.Add(Label3)
+        Controls.Add(lv_TusGimnasios)
         Controls.Add(Label1)
-        Controls.Add(Button1)
+        Controls.Add(cmd_Atras)
+        Controls.Add(Label2)
+        ForeColor = SystemColors.Control
         Name = "Gimnasios"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Gimnasios"
-        GroupBox2.ResumeLayout(False)
-        GroupBox2.PerformLayout()
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents cmd_Atras As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents lv_TusGimnasios As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents lv_TodosLosGimnasios As ListView
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents liderar As Button
 End Class

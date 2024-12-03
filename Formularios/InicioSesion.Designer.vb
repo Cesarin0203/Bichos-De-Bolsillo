@@ -28,87 +28,94 @@ Partial Class InicioSesion
         Label2 = New Label()
         txt_Usuario = New TextBox()
         txt_Contrasena = New TextBox()
-        Button1 = New Button()
-        Button2 = New Button()
+        cmdIniciarSesion = New Button()
+        cmdRegistrarse = New Button()
         SuspendLayout()
         ' 
         ' lbConnectionStatus
         ' 
         lbConnectionStatus.AutoSize = True
-        lbConnectionStatus.Location = New Point(14, 476)
+        lbConnectionStatus.Location = New Point(12, 357)
         lbConnectionStatus.Name = "lbConnectionStatus"
-        lbConnectionStatus.Size = New Size(152, 20)
+        lbConnectionStatus.Size = New Size(122, 15)
         lbConnectionStatus.TabIndex = 5
         lbConnectionStatus.Text = "Esperando conexión..."
         ' 
         ' Header
         ' 
         Header.AutoSize = True
-        Header.Font = New Font("Segoe UI", 28.0F)
-        Header.Location = New Point(106, 41)
+        Header.Font = New Font("Snap ITC", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Header.Location = New Point(93, 31)
         Header.Name = "Header"
-        Header.Size = New Size(195, 62)
+        Header.Size = New Size(191, 48)
         Header.TabIndex = 0
         Header.Text = "Acceder"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12.0F)
-        Label1.Location = New Point(51, 139)
+        Label1.Font = New Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(45, 104)
         Label1.Name = "Label1"
-        Label1.Size = New Size(83, 28)
+        Label1.Size = New Size(95, 22)
         Label1.TabIndex = 0
         Label1.Text = "Usuario:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 12.0F)
-        Label2.Location = New Point(49, 224)
+        Label2.Font = New Font("Snap ITC", 12F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(43, 168)
         Label2.Name = "Label2"
-        Label2.Size = New Size(114, 28)
+        Label2.Size = New Size(118, 22)
         Label2.TabIndex = 0
         Label2.Text = "Contraseña:"
         ' 
         ' txt_Usuario
         ' 
-        txt_Usuario.Location = New Point(51, 169)
+        txt_Usuario.Location = New Point(45, 127)
+        txt_Usuario.Margin = New Padding(3, 2, 3, 2)
         txt_Usuario.Name = "txt_Usuario"
-        txt_Usuario.Size = New Size(292, 27)
+        txt_Usuario.Size = New Size(256, 23)
         txt_Usuario.TabIndex = 1
         ' 
         ' txt_Contrasena
         ' 
-        txt_Contrasena.Location = New Point(51, 255)
+        txt_Contrasena.Location = New Point(45, 191)
+        txt_Contrasena.Margin = New Padding(3, 2, 3, 2)
         txt_Contrasena.Name = "txt_Contrasena"
-        txt_Contrasena.Size = New Size(292, 27)
+        txt_Contrasena.Size = New Size(256, 23)
         txt_Contrasena.TabIndex = 2
         txt_Contrasena.UseSystemPasswordChar = True
         ' 
         ' cmdIniciarSesion
         ' 
-        cmdIniciarSesion.Location = New Point(75, 320)
+        cmdIniciarSesion.Font = New Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdIniciarSesion.Location = New Point(66, 240)
+        cmdIniciarSesion.Margin = New Padding(3, 2, 3, 2)
         cmdIniciarSesion.Name = "cmdIniciarSesion"
-        cmdIniciarSesion.Size = New Size(118, 39)
+        cmdIniciarSesion.Size = New Size(103, 29)
         cmdIniciarSesion.TabIndex = 3
         cmdIniciarSesion.Text = "Iniciar sesión"
         cmdIniciarSesion.UseVisualStyleBackColor = True
         ' 
         ' cmdRegistrarse
         ' 
-        cmdRegistrarse.Location = New Point(200, 320)
+        cmdRegistrarse.Enabled = False
+        cmdRegistrarse.Font = New Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdRegistrarse.Location = New Point(175, 240)
+        cmdRegistrarse.Margin = New Padding(3, 2, 3, 2)
         cmdRegistrarse.Name = "cmdRegistrarse"
-        cmdRegistrarse.Size = New Size(118, 39)
+        cmdRegistrarse.Size = New Size(109, 29)
         cmdRegistrarse.TabIndex = 4
         cmdRegistrarse.Text = "Registrarse"
         cmdRegistrarse.UseVisualStyleBackColor = True
         ' 
         ' InicioSesion
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(393, 508)
+        ClientSize = New Size(344, 381)
         Controls.Add(cmdRegistrarse)
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
@@ -118,6 +125,7 @@ Partial Class InicioSesion
         Controls.Add(Label2)
         Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.FixedDialog
+        Margin = New Padding(3, 2, 3, 2)
         Name = "InicioSesion"
         StartPosition = FormStartPosition.CenterScreen
         ResumeLayout(False)

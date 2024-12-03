@@ -30,12 +30,14 @@ Partial Class MenuPrincipal
         ' 
         cmd_Empezar.Anchor = AnchorStyles.None
         cmd_Empezar.FlatStyle = FlatStyle.System
-        cmd_Empezar.Font = New Font("Comic Sans MS", 20.0F)
-        cmd_Empezar.Location = New Point(531, 412)
-        cmd_Empezar.MaximumSize = New Size(200, 72)
-        cmd_Empezar.MinimumSize = New Size(200, 72)
+        cmd_Empezar.Font = New Font("Snap ITC", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Empezar.ForeColor = Color.Red
+        cmd_Empezar.Location = New Point(465, 309)
+        cmd_Empezar.Margin = New Padding(3, 2, 3, 2)
+        cmd_Empezar.MaximumSize = New Size(175, 54)
+        cmd_Empezar.MinimumSize = New Size(175, 54)
         cmd_Empezar.Name = "cmd_Empezar"
-        cmd_Empezar.Size = New Size(200, 72)
+        cmd_Empezar.Size = New Size(175, 54)
         cmd_Empezar.TabIndex = 0
         cmd_Empezar.Text = "Empezar"
         cmd_Empezar.UseVisualStyleBackColor = True
@@ -44,25 +46,27 @@ Partial Class MenuPrincipal
         ' 
         lbTitulo.Anchor = AnchorStyles.None
         lbTitulo.FlatStyle = FlatStyle.Popup
-        lbTitulo.Font = New Font("Comic Sans MS", 40.0F)
-        lbTitulo.Location = New Point(315, 197)
+        lbTitulo.Font = New Font("Snap ITC", 39.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbTitulo.ForeColor = Color.Goldenrod
+        lbTitulo.Location = New Point(295, 186)
         lbTitulo.Margin = New Padding(0)
-        lbTitulo.MaximumSize = New Size(475, 80)
-        lbTitulo.MinimumSize = New Size(475, 80)
-        lbTitulo.Size = New Size(613, 107)
+        lbTitulo.Name = "lbTitulo"
+        lbTitulo.Size = New Size(612, 60)
         lbTitulo.TabIndex = 1
-        lbTitulo.TabIndex = 1
+        lbTitulo.Text = "Bichos de Bolsillo"
         lbTitulo.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' MenuPrincipal
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1262, 748)
+        ClientSize = New Size(1104, 561)
         Controls.Add(lbTitulo)
         Controls.Add(cmd_Empezar)
-        MinimumSize = New Size(569, 318)
+        Margin = New Padding(3, 2, 3, 2)
+        MinimumSize = New Size(500, 248)
         Name = "MenuPrincipal"
+        StartPosition = FormStartPosition.CenterScreen
         ResumeLayout(False)
     End Sub
 

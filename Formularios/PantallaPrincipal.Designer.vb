@@ -47,7 +47,7 @@ Partial Class PantallaPrincipal
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Snap ITC", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Goldenrod
         Label2.Location = New Point(358, 12)
         Label2.Name = "Label2"
@@ -60,7 +60,7 @@ Partial Class PantallaPrincipal
         cmd_Pokedex.FlatAppearance.BorderColor = Color.White
         cmd_Pokedex.FlatAppearance.BorderSize = 0
         cmd_Pokedex.FlatStyle = FlatStyle.Flat
-        cmd_Pokedex.Font = New Font("Snap ITC", 14.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Pokedex.Font = New Font("Snap ITC", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Pokedex.ForeColor = Color.Red
         cmd_Pokedex.Location = New Point(12, 12)
         cmd_Pokedex.Name = "cmd_Pokedex"
@@ -112,7 +112,7 @@ Partial Class PantallaPrincipal
         ' 
         cmd_Configuracion.FlatAppearance.BorderSize = 0
         cmd_Configuracion.FlatStyle = FlatStyle.Flat
-        cmd_Configuracion.Font = New Font("Snap ITC", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Configuracion.Font = New Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Configuracion.Image = My.Resources.Resources.emotion_gear
         cmd_Configuracion.ImageAlign = ContentAlignment.MiddleLeft
         cmd_Configuracion.Location = New Point(897, 513)
@@ -127,7 +127,7 @@ Partial Class PantallaPrincipal
         ' 
         cmd_MisPokemones.FlatAppearance.BorderSize = 0
         cmd_MisPokemones.FlatStyle = FlatStyle.Flat
-        cmd_MisPokemones.Font = New Font("Snap ITC", 14.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_MisPokemones.Font = New Font("Snap ITC", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_MisPokemones.ForeColor = Color.Red
         cmd_MisPokemones.Location = New Point(587, 439)
         cmd_MisPokemones.Name = "cmd_MisPokemones"
@@ -138,7 +138,6 @@ Partial Class PantallaPrincipal
         ' 
         ' PictureBox1
         ' 
-
         PictureBox1.Image = My.Resources.Resources.Pikachu
         PictureBox1.Location = New Point(358, 48)
         PictureBox1.Name = "PictureBox1"
@@ -148,7 +147,7 @@ Partial Class PantallaPrincipal
         ' 
         ' PantallaPrincipal
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.None
         ClientSize = New Size(1104, 561)
@@ -162,6 +161,7 @@ Partial Class PantallaPrincipal
         Controls.Add(Label2)
         Controls.Add(lbl_Bienvenida)
         Name = "PantallaPrincipal"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "PantallaPrincipal"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

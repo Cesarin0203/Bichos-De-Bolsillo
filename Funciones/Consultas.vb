@@ -13,4 +13,45 @@
             Return -1
         End If
     End Function
+
+    Public Function TraerMisGimnasios(ByVal Usuario As String) As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"  Select G.ID,G.Nombre,U.Nombre as NombreLider from GIMNASIO G
+                  INNER JOIN admin.USUARIO U ON G.ID_Lider = U.ID
+                  WHERE U.Nombre = '{Usuario}'")
+        If tabla.Rows.Count <= 0 Then
+            Return tabla
+        Else
+            Return tabla
+        End If
+    End Function
+    Public Function TraerTodosGimnasios() As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"SELECT G.ID, G.Nombre, 
+               CASE 
+               WHEN G.ID_Lider IS NULL THEN 'Sin Lider' 
+               ELSE U.Nombre 
+               END AS NombreLider 
+               FROM GIMNASIO G 
+               LEFT JOIN admin.USUARIO U ON G.ID_Lider = U.ID")
+        If tabla.Rows.Count <= 0 Then
+            MsgBox("No hay gimnasios", "Close", MessageBoxButtons.OK)
+            Return tabla
+        Else
+            Return tabla
+        End If
+    End Function
+    Public Function TraerGimnasiosSinLider() As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"SELECT G.ID, G.Nombre, CASE 
+                WHEN ID_Lider IS NULL THEN 'Sin Lider'  END AS NombreLider 
+                FROM GIMNASIO G 
+                WHERE ID_Lider IS NULL")
+        If tabla.Rows.Count <= 0 Then
+            MsgBox("No hay gimnasios para liderar", "Close", MessageBoxButtons.OK)
+            Return tabla
+        Else
+            Return tabla
+        End If
+    End Function
 End Class
