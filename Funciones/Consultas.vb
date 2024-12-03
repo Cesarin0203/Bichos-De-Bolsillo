@@ -17,7 +17,7 @@
     Public Function RegistrarUsuario(ByVal nombreUsuario As String, ByVal contrasena As String, ByVal fechaNacimiento As String) As Integer
         Dim currentDate As String = DateTime.Now.ToString("yyyy-MM-dd")
         Try
-            Return lConexion.Comando_Query($"insert into admin.Usuario (nombre, fecha_nacimiento, fecha_registro, contrasena) values ({nombreUsuario}, {fechaNacimiento}, {currentDate}, {contrasena})")
+            Return lConexion.Comando_Query($"insert into admin.Usuario (nombre, fecha_nacimiento, fecha_registro, contrasena) values ('{nombreUsuario}', '{fechaNacimiento}', '{currentDate}', '{contrasena}')")
         Catch ex As Exception
             Throw New Exception(ex.Message)
         End Try

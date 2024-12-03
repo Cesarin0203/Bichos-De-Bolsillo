@@ -7,7 +7,8 @@
 
     Private Sub cmdAceptar_Click(sender As Object, e As EventArgs) Handles cmdAceptar.Click
         Try
-            query.RegistrarUsuario(txt_Usuario.Text, txt_Contrasena.Text, FecNacPicker.ToString("yyyy-MM-dd"))
+
+            query.RegistrarUsuario(txt_Usuario.Text, txt_Contrasena.Text, FecNacPicker.Value.ToString("yyyy-MM-dd"))
             MsgBox("El usuario se registró correctamente. Proceda a iniciar sesión.", MsgBoxStyle.OkOnly, "Registro exitoso")
             InicioSesion.Show()
             Me.Close()
