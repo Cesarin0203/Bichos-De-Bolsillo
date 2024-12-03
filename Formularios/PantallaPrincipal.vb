@@ -15,11 +15,23 @@
         Try
             If FormAbierto("Gimnasios") = False Then
                 Dim frm As New Gimnasios
-                'frm.MdiParent = My.Forms.MenuPrincipal
+                frm.MdiParent = Bichos_De_Bolsillo
                 frm.Show()
             End If
         Catch ex As Exception
             MsgBox(ex.Message, "Close", MessageBoxButtons.OK)
+        End Try
+    End Sub
+
+    Private Sub cmd_Pokedex_Click(sender As Object, e As EventArgs) Handles cmd_Pokedex.Click
+        Try
+            If FormAbierto("Pokedex") = False Then
+                Dim frm As New Pokedex
+                frm.MdiParent = Bichos_De_Bolsillo
+                frm.Show()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
         End Try
     End Sub
 End Class

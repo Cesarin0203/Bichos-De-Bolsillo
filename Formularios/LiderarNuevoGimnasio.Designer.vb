@@ -77,6 +77,7 @@ Partial Class LiderarNuevoGimnasio
         Controls.Add(lv_TodosGimnasiosSinLider)
         Controls.Add(cmd_Atras)
         Name = "LiderarNuevoGimnasio"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "LiderarNuevoGimnasio"
         ResumeLayout(False)
     End Sub

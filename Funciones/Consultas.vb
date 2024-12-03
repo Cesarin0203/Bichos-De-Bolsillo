@@ -58,7 +58,21 @@
                 FROM GIMNASIO G 
                 WHERE ID_Lider IS NULL")
         If tabla.Rows.Count <= 0 Then
-            MsgBox("No hay gimnasios para liderar", "Close", MessageBoxButtons.OK)
+            MsgBox("No hay gimnasios para liderar", "Advertencia", MessageBoxButtons.OK)
+            Return tabla
+        Else
+            Return tabla
+        End If
+    End Function
+    Public Function TraerTodosPokemones() As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"select P.uuid as ID, E.ID_Evolucion as Evolucion,P.Nombre, T.Nombre as Tipo , AR.Nombre as ATKRAPIDO, AC.Nombre as ATKCARGADO From Pokemon P 
+                inner JOIN atributo.ESPECIE E on P.ID_Especie = E.ID
+                Inner JOIN atributo.TIPO T on E.ID_Tipo = T.ID
+                Inner JOIN atributo.ATKCARGADO AC on E.ID_Atkcargado = AC.ID
+                Inner JOIN atributo.ATKRAPIDO AR on E.ID_Atkrapido = AR.ID")
+        If tabla.Rows.Count <= 0 Then
+            MsgBox("No hay pokemones", "Advertencia", MessageBoxButtons.OK)
             Return tabla
         Else
             Return tabla

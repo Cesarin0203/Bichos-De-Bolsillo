@@ -1,5 +1,13 @@
-﻿Public Class LiderarNuevoGimnasio
+﻿Imports System.Transactions
+Imports Microsoft.Data.SqlClient
+
+Public Class LiderarNuevoGimnasio
     Dim query As New Consultas
+    Enum EnumlvGimnasio
+        ID = 0
+        Nombre = 1
+
+    End Enum
     Private Sub LiderarNuevoGimnasio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TraerInformacion()
     End Sub
@@ -12,5 +20,27 @@
             Item.SubItems.Add(row("NombreLider").ToString)
             lv_TodosGimnasiosSinLider.Items.Add(Item)
         Next
+    End Sub
+
+    Private Sub cmd_Atras_Click(sender As Object, e As EventArgs) Handles cmd_Atras.Click
+        Try
+            Dim Gimnasio As BD.Gimnasio
+
+            'Se hace la transaccion
+            lConexion.Transaccion = Nothing
+            For Each item As ListViewItem In lv_TodosGimnasiosSinLider.CheckedItems
+                Gimnasio.ID = item.SubItems(EnumlvGimnasio.ID).ToString
+                Gimnasio.ID_Lider = Usuario.IdApp
+                Gimnasio.ActualizarLider(lConexion.Transaccion)
+            Next
+
+            'COMMIT
+            'DIPOSE
+
+            Me.Close()
+        Catch ex As Exception
+            'COMMIT
+            'ROLLBACK
+        End Try
     End Sub
 End Class
