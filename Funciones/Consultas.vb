@@ -14,6 +14,16 @@
         End If
     End Function
 
+    Public Function RegistrarUsuario(ByVal nombreUsuario As String, ByVal contrasena As String, ByVal fechaNacimiento As String) As Integer
+        Dim currentDate As String = DateTime.Now.ToString("yyyy-MM-dd")
+        Try
+            Return lConexion.Comando_Query($"insert into admin.Usuario (nombre, fecha_nacimiento, fecha_registro, contrasena) values ('{nombreUsuario}', '{fechaNacimiento}', '{currentDate}', '{contrasena}')")
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+
+    End Function
+
     Public Function TraerMisGimnasios(ByVal Usuario As String) As DataTable
         Dim tabla As New DataTable
         tabla = lConexion.Adaptador_DataTable($"  Select G.ID,G.Nombre,U.Nombre as NombreLider from GIMNASIO G

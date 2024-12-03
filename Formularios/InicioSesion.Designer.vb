@@ -44,30 +44,30 @@ Partial Class InicioSesion
         ' Header
         ' 
         Header.AutoSize = True
-        Header.Font = New Font("Snap ITC", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Header.Font = New Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Header.Location = New Point(93, 31)
         Header.Name = "Header"
-        Header.Size = New Size(191, 48)
+        Header.Size = New Size(163, 42)
         Header.TabIndex = 0
         Header.Text = "Acceder"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(45, 104)
         Label1.Name = "Label1"
-        Label1.Size = New Size(95, 22)
+        Label1.Size = New Size(76, 20)
         Label1.TabIndex = 0
         Label1.Text = "Usuario:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Snap ITC", 12F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(43, 168)
         Label2.Name = "Label2"
-        Label2.Size = New Size(118, 22)
+        Label2.Size = New Size(96, 20)
         Label2.TabIndex = 0
         Label2.Text = "Contraseña:"
         ' 
@@ -90,7 +90,7 @@ Partial Class InicioSesion
         ' 
         ' cmdIniciarSesion
         ' 
-        cmdIniciarSesion.Font = New Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdIniciarSesion.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmdIniciarSesion.Location = New Point(66, 240)
         cmdIniciarSesion.Margin = New Padding(3, 2, 3, 2)
         cmdIniciarSesion.Name = "cmdIniciarSesion"
@@ -101,8 +101,7 @@ Partial Class InicioSesion
         ' 
         ' cmdRegistrarse
         ' 
-        cmdRegistrarse.Enabled = False
-        cmdRegistrarse.Font = New Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdRegistrarse.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmdRegistrarse.Location = New Point(175, 240)
         cmdRegistrarse.Margin = New Padding(3, 2, 3, 2)
         cmdRegistrarse.Name = "cmdRegistrarse"
