@@ -70,4 +70,16 @@
             MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
         End Try
     End Sub
+
+    Private Sub Cmd_InciarBatalla_Click(sender As Object, e As EventArgs) Handles Cmd_InciarBatalla.Click
+        Try
+            If FormAbierto("IniciarBatalla") = False Then
+                Dim frm As New IniciarBatalla
+                frm.MdiParent = Bichos_De_Bolsillo
+                frm.Show()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
+        End Try
+    End Sub
 End Class
