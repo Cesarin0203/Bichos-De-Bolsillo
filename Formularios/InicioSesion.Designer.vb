@@ -27,7 +27,7 @@ Partial Class InicioSesion
         Label1 = New Label()
         Label2 = New Label()
         txt_Usuario = New TextBox()
-        txt_Contasena = New TextBox()
+        txt_Contrasena = New TextBox()
         cmdIniciarSesion = New Button()
         cmdRegistrarse = New Button()
         SuspendLayout()
@@ -45,7 +45,7 @@ Partial Class InicioSesion
         ' Header
         ' 
         Header.AutoSize = True
-        Header.Font = New Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Header.Font = New Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Header.Location = New Point(93, 31)
         Header.Margin = New Padding(4, 0, 4, 0)
         Header.Name = "Header"
@@ -56,7 +56,7 @@ Partial Class InicioSesion
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, 0)
         Label1.Location = New Point(46, 104)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
@@ -67,7 +67,7 @@ Partial Class InicioSesion
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, 0)
         Label2.Location = New Point(43, 168)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
@@ -83,7 +83,7 @@ Partial Class InicioSesion
         txt_Usuario.Size = New Size(256, 23)
         txt_Usuario.TabIndex = 1
         ' 
-        ' txt_Contasena
+        ' txt_Contrasena
         ' 
         txt_Contrasena.Location = New Point(46, 192)
         txt_Contrasena.Margin = New Padding(4, 2, 4, 2)
@@ -123,7 +123,7 @@ Partial Class InicioSesion
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
         Controls.Add(cmdIniciarSesion)
-        Controls.Add(txt_Contasena)
+        Controls.Add(txt_Contrasena)
         Controls.Add(txt_Usuario)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -139,7 +139,7 @@ Partial Class InicioSesion
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txt_Usuario As TextBox
-    Friend WithEvents txt_Contasena As TextBox
+    Friend WithEvents txt_Contrasena As TextBox
     Friend WithEvents cmdIniciarSesion As Button
     Friend WithEvents cmdRegistrarse As Button
 End Class
