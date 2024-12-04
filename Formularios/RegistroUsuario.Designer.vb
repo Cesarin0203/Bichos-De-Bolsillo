@@ -29,7 +29,7 @@ Partial Class RegistroUsuario
         txt_Usuario = New TextBox()
         Label2 = New Label()
         Label1 = New Label()
-        FecNacPicker = New DateTimePicker()
+        pickerFechaNac = New DateTimePicker()
         Label3 = New Label()
         SuspendLayout()
         ' 
@@ -101,12 +101,12 @@ Partial Class RegistroUsuario
         Label1.TabIndex = 8
         Label1.Text = "Nombre de usuario:"
         ' 
-        ' FecNacPicker
+        ' pickerFechaNac
         ' 
-        FecNacPicker.Location = New Point(40, 185)
-        FecNacPicker.Name = "FecNacPicker"
-        FecNacPicker.Size = New Size(256, 23)
-        FecNacPicker.TabIndex = 14
+        pickerFechaNac.Location = New Point(40, 185)
+        pickerFechaNac.Name = "pickerFechaNac"
+        pickerFechaNac.Size = New Size(256, 23)
+        pickerFechaNac.TabIndex = 14
         ' 
         ' Label3
         ' 
@@ -124,7 +124,7 @@ Partial Class RegistroUsuario
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(344, 381)
         Controls.Add(Label3)
-        Controls.Add(FecNacPicker)
+        Controls.Add(pickerFechaNac)
         Controls.Add(cmdCancelar)
         Controls.Add(lbConnectionStatus)
         Controls.Add(cmdAceptar)
@@ -133,6 +133,7 @@ Partial Class RegistroUsuario
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "RegistroUsuario"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "RegistroUsuario"
         ResumeLayout(False)
         PerformLayout()
@@ -145,6 +146,6 @@ Partial Class RegistroUsuario
     Friend WithEvents txt_Usuario As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents FecNacPicker As DateTimePicker
+    Friend WithEvents pickerFechaNac As DateTimePicker
     Friend WithEvents Label3 As Label
 End Class

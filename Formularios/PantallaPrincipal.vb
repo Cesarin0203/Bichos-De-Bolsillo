@@ -34,4 +34,16 @@
             MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
         End Try
     End Sub
+
+    Private Sub cmd_Configuracion_Click(sender As Object, e As EventArgs) Handles cmd_Configuracion.Click
+        Try
+            If FormAbierto("Configuracion") = False Then
+                Dim frm As New Configuracion
+                frm.MdiParent = Bichos_De_Bolsillo
+                frm.Show()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
+        End Try
+    End Sub
 End Class

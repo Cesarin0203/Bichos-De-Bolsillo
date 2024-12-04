@@ -37,22 +37,22 @@ Partial Class PantallaPrincipal
         ' lbl_Bienvenida
         ' 
         lbl_Bienvenida.AutoSize = True
-        lbl_Bienvenida.Font = New Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_Bienvenida.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lbl_Bienvenida.Location = New Point(12, 537)
         lbl_Bienvenida.Name = "lbl_Bienvenida"
-        lbl_Bienvenida.Size = New Size(109, 17)
+        lbl_Bienvenida.Size = New Size(89, 16)
         lbl_Bienvenida.TabIndex = 0
         lbl_Bienvenida.Text = "Hola, Usuario"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Goldenrod
         Label2.Location = New Point(358, 12)
         Label2.Name = "Label2"
-        Label2.Size = New Size(362, 42)
-        Label2.TabIndex = 1
+        Label2.Size = New Size(290, 37)
+        Label2.TabIndex = 0
         Label2.Text = "Bichos De Bolsillo"
         ' 
         ' cmd_Pokedex
@@ -60,12 +60,12 @@ Partial Class PantallaPrincipal
         cmd_Pokedex.FlatAppearance.BorderColor = Color.White
         cmd_Pokedex.FlatAppearance.BorderSize = 0
         cmd_Pokedex.FlatStyle = FlatStyle.Flat
-        cmd_Pokedex.Font = New Font("Snap ITC", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Pokedex.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Pokedex.ForeColor = Color.Red
         cmd_Pokedex.Location = New Point(12, 12)
         cmd_Pokedex.Name = "cmd_Pokedex"
         cmd_Pokedex.Size = New Size(128, 30)
-        cmd_Pokedex.TabIndex = 2
+        cmd_Pokedex.TabIndex = 1
         cmd_Pokedex.Text = "Pokedex"
         cmd_Pokedex.UseVisualStyleBackColor = True
         ' 
@@ -73,7 +73,7 @@ Partial Class PantallaPrincipal
         ' 
         cmd_Nidos.FlatAppearance.BorderSize = 0
         cmd_Nidos.FlatStyle = FlatStyle.Flat
-        cmd_Nidos.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Nidos.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Nidos.ForeColor = Color.Red
         cmd_Nidos.Location = New Point(12, 82)
         cmd_Nidos.Name = "cmd_Nidos"
@@ -86,7 +86,7 @@ Partial Class PantallaPrincipal
         ' 
         Cmd_InciarBatalla.FlatAppearance.BorderSize = 0
         Cmd_InciarBatalla.FlatStyle = FlatStyle.Flat
-        Cmd_InciarBatalla.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Cmd_InciarBatalla.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Cmd_InciarBatalla.ForeColor = Color.Red
         Cmd_InciarBatalla.Location = New Point(295, 438)
         Cmd_InciarBatalla.Name = "Cmd_InciarBatalla"
@@ -99,12 +99,12 @@ Partial Class PantallaPrincipal
         ' 
         cmd_Gimnasio.FlatAppearance.BorderSize = 0
         cmd_Gimnasio.FlatStyle = FlatStyle.Flat
-        cmd_Gimnasio.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Gimnasio.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Gimnasio.ForeColor = Color.Red
         cmd_Gimnasio.Location = New Point(12, 48)
         cmd_Gimnasio.Name = "cmd_Gimnasio"
         cmd_Gimnasio.Size = New Size(128, 28)
-        cmd_Gimnasio.TabIndex = 5
+        cmd_Gimnasio.TabIndex = 2
         cmd_Gimnasio.Text = "Gimnasios"
         cmd_Gimnasio.UseVisualStyleBackColor = True
         ' 
@@ -112,7 +112,7 @@ Partial Class PantallaPrincipal
         ' 
         cmd_Configuracion.FlatAppearance.BorderSize = 0
         cmd_Configuracion.FlatStyle = FlatStyle.Flat
-        cmd_Configuracion.Font = New Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Configuracion.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Configuracion.Image = My.Resources.Resources.emotion_gear
         cmd_Configuracion.ImageAlign = ContentAlignment.MiddleLeft
         cmd_Configuracion.Location = New Point(897, 513)
@@ -127,12 +127,12 @@ Partial Class PantallaPrincipal
         ' 
         cmd_MisPokemones.FlatAppearance.BorderSize = 0
         cmd_MisPokemones.FlatStyle = FlatStyle.Flat
-        cmd_MisPokemones.Font = New Font("Snap ITC", 14.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_MisPokemones.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_MisPokemones.ForeColor = Color.Red
         cmd_MisPokemones.Location = New Point(587, 439)
         cmd_MisPokemones.Name = "cmd_MisPokemones"
         cmd_MisPokemones.Size = New Size(199, 34)
-        cmd_MisPokemones.TabIndex = 7
+        cmd_MisPokemones.TabIndex = 5
         cmd_MisPokemones.Text = "Mis Pokemones"
         cmd_MisPokemones.UseVisualStyleBackColor = True
         ' 

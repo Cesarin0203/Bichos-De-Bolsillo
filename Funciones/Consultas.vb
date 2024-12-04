@@ -16,12 +16,25 @@
 
     Public Function RegistrarUsuario(ByVal nombreUsuario As String, ByVal contrasena As String, ByVal fechaNacimiento As String) As Integer
         Dim currentDate As String = DateTime.Now.ToString("yyyy-MM-dd")
-        Try
-            Return lConexion.Comando_Query($"insert into admin.Usuario (nombre, fecha_nacimiento, fecha_registro, contrasena) values ('{nombreUsuario}', '{fechaNacimiento}', '{currentDate}', '{contrasena}')")
-        Catch ex As Exception
-            Throw New Exception(ex.Message)
-        End Try
+        Return lConexion.Comando_Query($"insert into admin.Usuario (nombre, fecha_nacimiento, fecha_registro, contrasena) values ('{nombreUsuario}', '{fechaNacimiento}', '{currentDate}', '{contrasena}')")
+    End Function
 
+    Public Function GetUsuario(ByVal idUsuario As Integer) As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"Select nombre, fecha_nacimiento, fecha_registro, contrasena, victorias, derrotas from admin.Usuario Where id = {idUsuario}")
+        Return tabla
+    End Function
+
+    Public Function ModificarContrasena(ByVal idUsuario As String, ByVal nuevaContra As String) As Integer
+        Return lConexion.Comando_Query($"Update admin.Usuario set contrasena = '{nuevaContra}' where id = {idUsuario}")
+    End Function
+
+    Public Function ModificarNombreUsuario(ByVal idUsuario As String, ByVal nombreUsuario As String) As Integer
+        Return lConexion.Comando_Query($"Update admin.Usuario set nombre = '{nombreUsuario}' where id = {idUsuario}")
+    End Function
+
+    Public Function ModificarFechaNacUsuario(ByVal idUsuario As String, ByVal fechaNac As String) As Integer
+        Return lConexion.Comando_Query($"Update admin.Usuario set fecha_nacimiento = '{fechaNac}' where id = {idUsuario}")
     End Function
 
     Public Function TraerMisGimnasios(ByVal Usuario As String) As DataTable
