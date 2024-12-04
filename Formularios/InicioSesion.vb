@@ -9,7 +9,7 @@
         Catch ex As Exception
             lbConnectionStatus.Text = "Ocurrió un error de conexión. Intente de nuevo más tarde"
             txt_Usuario.Enabled = False
-            txt_Contrasena.Enabled = False
+            txt_Contasena.Enabled = False
         End Try
     End Sub
 

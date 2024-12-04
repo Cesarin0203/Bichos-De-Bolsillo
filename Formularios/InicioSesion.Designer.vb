@@ -27,7 +27,7 @@ Partial Class InicioSesion
         Label1 = New Label()
         Label2 = New Label()
         txt_Usuario = New TextBox()
-        txt_Contrasena = New TextBox()
+        txt_Contasena = New TextBox()
         cmdIniciarSesion = New Button()
         cmdRegistrarse = New Button()
         SuspendLayout()
@@ -56,7 +56,7 @@ Partial Class InicioSesion
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(46, 104)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
@@ -67,7 +67,7 @@ Partial Class InicioSesion
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(43, 168)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
@@ -83,7 +83,7 @@ Partial Class InicioSesion
         txt_Usuario.Size = New Size(256, 23)
         txt_Usuario.TabIndex = 1
         ' 
-        ' txt_Contrasena
+        ' txt_Contasena
         ' 
         txt_Contrasena.Location = New Point(46, 192)
         txt_Contrasena.Margin = New Padding(4, 2, 4, 2)
@@ -94,7 +94,7 @@ Partial Class InicioSesion
         ' 
         ' cmdIniciarSesion
         ' 
-        cmdIniciarSesion.Font = New Font("Microsoft Sans Serif", 10F)
+        cmdIniciarSesion.Font = New Font("Microsoft Sans Serif", 10.0F)
         cmdIniciarSesion.Location = New Point(66, 240)
         cmdIniciarSesion.Margin = New Padding(4, 2, 4, 2)
         cmdIniciarSesion.Name = "cmdIniciarSesion"
@@ -105,7 +105,7 @@ Partial Class InicioSesion
         ' 
         ' cmdRegistrarse
         ' 
-        cmdRegistrarse.Font = New Font("Microsoft Sans Serif", 10F)
+        cmdRegistrarse.Font = New Font("Microsoft Sans Serif", 10.0F)
         cmdRegistrarse.Location = New Point(175, 240)
         cmdRegistrarse.Margin = New Padding(4, 2, 4, 2)
         cmdRegistrarse.Name = "cmdRegistrarse"
@@ -116,14 +116,14 @@ Partial Class InicioSesion
         ' 
         ' InicioSesion
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(344, 381)
         Controls.Add(cmdRegistrarse)
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
         Controls.Add(cmdIniciarSesion)
-        Controls.Add(txt_Contrasena)
+        Controls.Add(txt_Contasena)
         Controls.Add(txt_Usuario)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -139,7 +139,7 @@ Partial Class InicioSesion
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txt_Usuario As TextBox
-    Friend WithEvents txt_Contrasena As TextBox
+    Friend WithEvents txt_Contasena As TextBox
     Friend WithEvents cmdIniciarSesion As Button
     Friend WithEvents cmdRegistrarse As Button
 End Class

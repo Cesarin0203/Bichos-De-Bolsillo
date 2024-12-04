@@ -27,20 +27,20 @@ Public Class LiderarNuevoGimnasio
             Dim Gimnasio As BD.Gimnasio
 
             'Se hace la transaccion
-            lConexion.Transaccion = Nothing
+            lConexion.Transaccion = lConexion.Conexion.BeginTransaction
             For Each item As ListViewItem In lv_TodosGimnasiosSinLider.CheckedItems
                 Gimnasio.ID = item.SubItems(EnumlvGimnasio.ID).ToString
                 Gimnasio.ID_Lider = Usuario.IdApp
                 Gimnasio.ActualizarLider(lConexion.Transaccion)
             Next
 
-            'COMMIT
-            'DIPOSE
-
+            lConexion.Transaccion.Commit()
+            lConexion.Transaccion.Dispose()
+            MsgBox("Gimnasio liderado con exito", MsgBoxStyle.Information Or MsgBoxStyle.OkOnly, "Información")
             Me.Close()
         Catch ex As Exception
-            'COMMIT
-            'ROLLBACK
+            lConexion.Transaccion.Rollback()
+            lConexion.Transaccion.Dispose()
         End Try
     End Sub
 End Class

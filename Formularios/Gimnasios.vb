@@ -19,6 +19,7 @@
             Item.SubItems.Add(row("Nombre").ToString)
             Item.SubItems.Add(row("NombreLider").ToString)
             lv_TusGimnasios.Items.Add(Item)
+
         Next
 
         Dim TablaGimnasios As DataTable = query.TraerTodosGimnasios
