@@ -36,6 +36,7 @@ Partial Class InicioSesion
         ' 
         lbConnectionStatus.AutoSize = True
         lbConnectionStatus.Location = New Point(12, 357)
+        lbConnectionStatus.Margin = New Padding(4, 0, 4, 0)
         lbConnectionStatus.Name = "lbConnectionStatus"
         lbConnectionStatus.Size = New Size(122, 15)
         lbConnectionStatus.TabIndex = 5
@@ -44,8 +45,9 @@ Partial Class InicioSesion
         ' Header
         ' 
         Header.AutoSize = True
-        Header.Font = New Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Header.Font = New Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Header.Location = New Point(93, 31)
+        Header.Margin = New Padding(4, 0, 4, 0)
         Header.Name = "Header"
         Header.Size = New Size(163, 42)
         Header.TabIndex = 0
@@ -54,18 +56,20 @@ Partial Class InicioSesion
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(45, 104)
+        Label1.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        Label1.Location = New Point(46, 104)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(76, 20)
+        Label1.Size = New Size(68, 20)
         Label1.TabIndex = 0
         Label1.Text = "Usuario:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, 0)
         Label2.Location = New Point(43, 168)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
         Label2.Size = New Size(96, 20)
         Label2.TabIndex = 0
@@ -73,9 +77,9 @@ Partial Class InicioSesion
         ' 
         ' cmdIniciarSesion
         ' 
-        cmdIniciarSesion.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdIniciarSesion.Font = New Font("Microsoft Sans Serif", 10.0F)
         cmdIniciarSesion.Location = New Point(66, 240)
-        cmdIniciarSesion.Margin = New Padding(3, 2, 3, 2)
+        cmdIniciarSesion.Margin = New Padding(4, 2, 4, 2)
         cmdIniciarSesion.Name = "cmdIniciarSesion"
         cmdIniciarSesion.Size = New Size(103, 29)
         cmdIniciarSesion.TabIndex = 3
@@ -84,11 +88,11 @@ Partial Class InicioSesion
         ' 
         ' cmdRegistrarse
         ' 
-        cmdRegistrarse.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdRegistrarse.Font = New Font("Microsoft Sans Serif", 10.0F)
         cmdRegistrarse.Location = New Point(175, 240)
-        cmdRegistrarse.Margin = New Padding(3, 2, 3, 2)
+        cmdRegistrarse.Margin = New Padding(4, 2, 4, 2)
         cmdRegistrarse.Name = "cmdRegistrarse"
-        cmdRegistrarse.Size = New Size(109, 29)
+        cmdRegistrarse.Size = New Size(108, 29)
         cmdRegistrarse.TabIndex = 4
         cmdRegistrarse.Text = "Registrarse"
         cmdRegistrarse.UseVisualStyleBackColor = True
@@ -113,7 +117,7 @@ Partial Class InicioSesion
         ' 
         ' InicioSesion
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(344, 381)
         Controls.Add(txt_Usuario)
@@ -125,7 +129,7 @@ Partial Class InicioSesion
         Controls.Add(Label2)
         Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.FixedDialog
-        Margin = New Padding(3, 2, 3, 2)
+        Margin = New Padding(4, 2, 4, 2)
         Name = "InicioSesion"
         StartPosition = FormStartPosition.CenterScreen
         ResumeLayout(False)
