@@ -26,10 +26,10 @@ Partial Class InicioSesion
         Header = New Label()
         Label1 = New Label()
         Label2 = New Label()
-        txt_Usuario = New TextBox()
-        txt_Contasena = New TextBox()
         cmdIniciarSesion = New Button()
         cmdRegistrarse = New Button()
+        txt_Contrasena = New TextBoxPokemon()
+        txt_Usuario = New TextBoxPokemon()
         SuspendLayout()
         ' 
         ' lbConnectionStatus
@@ -71,23 +71,6 @@ Partial Class InicioSesion
         Label2.TabIndex = 0
         Label2.Text = "Contraseña:"
         ' 
-        ' txt_Usuario
-        ' 
-        txt_Usuario.Location = New Point(45, 127)
-        txt_Usuario.Margin = New Padding(3, 2, 3, 2)
-        txt_Usuario.Name = "txt_Usuario"
-        txt_Usuario.Size = New Size(256, 23)
-        txt_Usuario.TabIndex = 1
-        ' 
-        ' txt_Contasena
-        ' 
-        txt_Contasena.Location = New Point(45, 191)
-        txt_Contasena.Margin = New Padding(3, 2, 3, 2)
-        txt_Contasena.Name = "txt_Contasena"
-        txt_Contasena.Size = New Size(256, 23)
-        txt_Contasena.TabIndex = 2
-        txt_Contasena.UseSystemPasswordChar = True
-        ' 
         ' cmdIniciarSesion
         ' 
         cmdIniciarSesion.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -110,17 +93,35 @@ Partial Class InicioSesion
         cmdRegistrarse.Text = "Registrarse"
         cmdRegistrarse.UseVisualStyleBackColor = True
         ' 
+        ' txt_Contrasena
+        ' 
+        txt_Contrasena.Location = New Point(43, 200)
+        txt_Contrasena.Name = "txt_Contrasena"
+        txt_Contrasena.NombreTextBox = Nothing
+        txt_Contrasena.Size = New Size(258, 23)
+        txt_Contrasena.TabIndex = 2
+        txt_Contrasena.TipoValidacion = TextBoxPokemon.TipoValidacionTextbox.Contrasena
+        ' 
+        ' txt_Usuario
+        ' 
+        txt_Usuario.Location = New Point(43, 127)
+        txt_Usuario.Name = "txt_Usuario"
+        txt_Usuario.NombreTextBox = Nothing
+        txt_Usuario.Size = New Size(258, 23)
+        txt_Usuario.TabIndex = 1
+        txt_Usuario.TipoValidacion = TextBoxPokemon.TipoValidacionTextbox.Usuario
+        ' 
         ' InicioSesion
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(344, 381)
+        Controls.Add(txt_Usuario)
+        Controls.Add(txt_Contrasena)
         Controls.Add(cmdRegistrarse)
         Controls.Add(Header)
         Controls.Add(lbConnectionStatus)
         Controls.Add(cmdIniciarSesion)
-        Controls.Add(txt_Contasena)
-        Controls.Add(txt_Usuario)
         Controls.Add(Label2)
         Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.FixedDialog
@@ -134,8 +135,8 @@ Partial Class InicioSesion
     Friend WithEvents Header As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txt_Usuario As TextBox
-    Friend WithEvents txt_Contasena As TextBox
     Friend WithEvents cmdIniciarSesion As Button
     Friend WithEvents cmdRegistrarse As Button
+    Friend WithEvents txt_Contrasena As TextBoxPokemon
+    Friend WithEvents txt_Usuario As TextBoxPokemon
 End Class

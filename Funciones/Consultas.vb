@@ -95,4 +95,18 @@
             Return tabla
         End If
     End Function
+
+    Public Function TraerNidos() As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"Select N.ID, N.Ubicacion, E.Nombre as Especie,R.Nombre as Region from jugabilidad.nido N
+                inner join atributo.ESPECIE E on E.ID = N.ID_Especie
+                inner join jugabilidad.region R on N.ID_Region = R.ID")
+        If tabla.Rows.Count <= 0 Then
+            MsgBox("No se encontraron nidos", MsgBoxStyle.OkOnly, "Advertencia")
+
+            Return tabla
+        Else
+            Return tabla
+        End If
+    End Function
 End Class

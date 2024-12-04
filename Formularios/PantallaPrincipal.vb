@@ -46,4 +46,16 @@
             MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
         End Try
     End Sub
+
+    Private Sub cmd_Nidos_Click(sender As Object, e As EventArgs) Handles cmd_Nidos.Click
+        Try
+            If FormAbierto("Nidos") = False Then
+                Dim frm As New Nidos
+                frm.MdiParent = Bichos_De_Bolsillo
+                frm.Show()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
+        End Try
+    End Sub
 End Class

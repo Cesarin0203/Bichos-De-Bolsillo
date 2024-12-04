@@ -9,7 +9,8 @@
         NumeroDecimal = 3
         Correo = 4
         Alfanumerico = 5
-        UsuarioOContraseña = 6
+        Usuario = 6
+        Contrasena = 7
     End Enum
 
     Sub New()
@@ -102,8 +103,15 @@
             If Asc(e.KeyChar) = Keys.Enter Then 'Para quitar el Beep (sonido) de windows al precionar enter en textbox que no es multilinea 
                 e.Handled = True
             End If
-        ElseIf TipoValidacion = TipoValidacionTextbox.UsuarioOContraseña Then
-            If "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz.,0123456789".IndexOf(e.KeyChar) < 0 And AscW(e.KeyChar) <> Keys.Enter And AscW(e.KeyChar) <> Keys.Back Then
+        ElseIf TipoValidacion = TipoValidacionTextbox.Usuario Then
+            If "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz.,0123456789áéíóúÁÉÍÓÚ".IndexOf(e.KeyChar) < 0 And AscW(e.KeyChar) <> Keys.Enter And AscW(e.KeyChar) <> Keys.Back Then
+                e.Handled = True
+            End If
+            If Asc(e.KeyChar) = Keys.Enter Then 'Para quitar el Beep (sonido) de windows al precionar enter en textbox que no es multilinea 
+                e.Handled = True
+            End If
+        ElseIf TipoValidacion = TipoValidacionTextbox.Contrasena Then
+            If "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz.,0123456789|°!¡'?=*][{}+´:;^_<>~¨´@#&¿".IndexOf(e.KeyChar) < 0 And AscW(e.KeyChar) <> Keys.Enter And AscW(e.KeyChar) <> Keys.Back Then
                 e.Handled = True
             End If
             If Asc(e.KeyChar) = Keys.Enter Then 'Para quitar el Beep (sonido) de windows al precionar enter en textbox que no es multilinea 

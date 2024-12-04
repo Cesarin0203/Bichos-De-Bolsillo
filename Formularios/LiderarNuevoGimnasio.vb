@@ -24,12 +24,12 @@ Public Class LiderarNuevoGimnasio
 
     Private Sub cmd_Atras_Click(sender As Object, e As EventArgs) Handles cmd_Atras.Click
         Try
-            Dim Gimnasio As BD.Gimnasio
+            Dim Gimnasio As New BD.Gimnasio
 
             'Se hace la transaccion
             lConexion.Transaccion = lConexion.Conexion.BeginTransaction
             For Each item As ListViewItem In lv_TodosGimnasiosSinLider.CheckedItems
-                Gimnasio.ID = item.SubItems(EnumlvGimnasio.ID).ToString
+                Gimnasio.ID = item.SubItems(EnumlvGimnasio.ID).Text.Trim
                 Gimnasio.ID_Lider = Usuario.IdApp
                 Gimnasio.ActualizarLider(lConexion.Transaccion)
             Next

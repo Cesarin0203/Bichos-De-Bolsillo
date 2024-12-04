@@ -133,6 +133,7 @@ Partial Class RegistroUsuario
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "RegistroUsuario"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "RegistroUsuario"
         ResumeLayout(False)
         PerformLayout()
