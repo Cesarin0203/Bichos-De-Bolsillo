@@ -104,7 +104,7 @@ Partial Class InicioSesion
         txt_Contrasena.NombreTextBox = Nothing
         txt_Contrasena.Size = New Size(258, 23)
         txt_Contrasena.TabIndex = 2
-        txt_Contrasena.TipoValidacion = Bichos_De_Bolsillo.TextBoxPokemon.TipoValidacionTextbox.Contrasena
+        txt_Contrasena.TipoValidacion = TextBoxPokemon.TipoValidacionTextbox.Contrasena
         ' 
         ' txt_Usuario
         ' 
@@ -113,7 +113,7 @@ Partial Class InicioSesion
         txt_Usuario.NombreTextBox = Nothing
         txt_Usuario.Size = New Size(258, 23)
         txt_Usuario.TabIndex = 1
-        txt_Usuario.TipoValidacion = Bichos_De_Bolsillo.TextBoxPokemon.TipoValidacionTextbox.Usuario
+        txt_Usuario.TipoValidacion = TextBoxPokemon.TipoValidacionTextbox.Usuario
         ' 
         ' InicioSesion
         ' 

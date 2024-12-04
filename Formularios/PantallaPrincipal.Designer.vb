@@ -113,7 +113,7 @@ Partial Class PantallaPrincipal
         cmd_Configuracion.FlatAppearance.BorderSize = 0
         cmd_Configuracion.FlatStyle = FlatStyle.Flat
         cmd_Configuracion.Font = New Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        cmd_Configuracion.Image = Bichos_De_Bolsillo.My.Resources.Resources.emotion_gear
+        cmd_Configuracion.Image = My.Resources.Resources.emotion_gear
         cmd_Configuracion.ImageAlign = ContentAlignment.MiddleLeft
         cmd_Configuracion.Location = New Point(897, 513)
         cmd_Configuracion.Name = "cmd_Configuracion"
@@ -138,7 +138,7 @@ Partial Class PantallaPrincipal
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = Bichos_De_Bolsillo.My.Resources.Resources.Pikachu
+        PictureBox1.Image = My.Resources.Resources.Pikachu
         PictureBox1.Location = New Point(358, 48)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(387, 365)
