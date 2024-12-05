@@ -1,4 +1,6 @@
-﻿Public Class Consultas
+﻿Imports System.Runtime.InteropServices.JavaScript.JSType
+
+Public Class Consultas
 
     Public Function ValidarInicioSesion(ByVal nombreUsuario As String, ByVal contrasena As String) As Integer
         Dim tabla As New DataTable
@@ -121,5 +123,54 @@
         Else
             Return tabla
         End If
+    End Function
+    Public Function TraerUsuariosListosParaCombate(ByVal IDUsuario As String) As DataTable
+        Dim tabla As New DataTable
+        tabla = lConexion.Adaptador_DataTable($"SELECT U.Nombre 
+                FROM admin.Usuario U 
+                INNER JOIN jugabilidad.Pokemon P ON U.ID = P.ID_Usuario 
+                WHERE U.ID <> {IDUsuario} 
+                GROUP BY U.Nombre, U.ID HAVING COUNT(P.uuid) >= 3;")
+        If tabla.Rows.Count <= 0 Then
+            MsgBox("No se encontraron nidos", MsgBoxStyle.OkOnly, "Advertencia")
+
+            Return tabla
+        Else
+            Return tabla
+        End If
+    End Function
+    Public Function TraerIdRival(ByVal NombreRival As String) As Integer
+        Try
+            Dim ID As Integer = 0
+            Dim tabla As New DataTable
+            tabla = lConexion.Adaptador_DataTable($"Select ID from admin.usuario Where Nombre = '{NombreRival}'")
+            If tabla.Rows.Count > 0 Then
+
+                ID = CInt(tabla.Rows(0)("ID").ToString.Trim)
+
+            Else
+                Throw New Exception("No se logró obtener ID")
+            End If
+            Return ID
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+    Public Function TraerCombate(ByVal IDUsuario As Integer, ByVal IDRival As Integer) As Integer
+        Try
+            Dim Ganador As Integer = 0
+            Dim tabla As New DataTable
+            tabla = lConexion.Adaptador_DataTable($"Exec jugabilidad.sp_SimularCombatesEntreUsuarios {IDUsuario},{IDRival}")
+            If tabla.Rows.Count > 0 Then
+
+                Ganador = CInt(tabla.Rows(0)("Ganador").ToString.Trim)
+
+            Else
+                Throw New Exception("No se logró hacer el combate")
+            End If
+            Return Ganador
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
     End Function
 End Class

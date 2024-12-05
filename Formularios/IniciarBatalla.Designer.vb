@@ -26,14 +26,15 @@ Partial Class IniciarBatalla
         cmd_Iniciar = New Button()
         lbl_TuUsuario = New Label()
         Label3 = New Label()
-        lbl_RivalUsuario = New Label()
         cmd_Atras = New Button()
+        cb_rivales = New ComboBox()
+        lbl_Resultado = New Label()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Snap ITC", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Red
         Label1.Location = New Point(330, 50)
         Label1.Name = "Label1"
@@ -57,7 +58,7 @@ Partial Class IniciarBatalla
         ' lbl_TuUsuario
         ' 
         lbl_TuUsuario.AutoSize = True
-        lbl_TuUsuario.Font = New Font("Snap ITC", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_TuUsuario.Font = New Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lbl_TuUsuario.Location = New Point(164, 131)
         lbl_TuUsuario.Name = "lbl_TuUsuario"
         lbl_TuUsuario.Size = New Size(160, 42)
@@ -68,23 +69,13 @@ Partial Class IniciarBatalla
         ' 
         Label3.AutoSize = True
         Label3.BackColor = SystemColors.Control
-        Label3.Font = New Font("Showcard Gothic", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Showcard Gothic", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.Goldenrod
         Label3.Location = New Point(348, 172)
         Label3.Name = "Label3"
         Label3.Size = New Size(162, 119)
         Label3.TabIndex = 23
         Label3.Text = "VS"
-        ' 
-        ' lbl_RivalUsuario
-        ' 
-        lbl_RivalUsuario.AutoSize = True
-        lbl_RivalUsuario.Font = New Font("Snap ITC", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbl_RivalUsuario.Location = New Point(541, 131)
-        lbl_RivalUsuario.Name = "lbl_RivalUsuario"
-        lbl_RivalUsuario.Size = New Size(160, 42)
-        lbl_RivalUsuario.TabIndex = 24
-        lbl_RivalUsuario.Text = "Usuario"
         ' 
         ' cmd_Atras
         ' 
@@ -101,18 +92,45 @@ Partial Class IniciarBatalla
         cmd_Atras.Text = "Atras"
         cmd_Atras.UseVisualStyleBackColor = False
         ' 
+        ' cb_rivales
+        ' 
+        cb_rivales.BackColor = SystemColors.Control
+        cb_rivales.DropDownStyle = ComboBoxStyle.DropDownList
+        cb_rivales.FlatStyle = FlatStyle.System
+        cb_rivales.Font = New Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cb_rivales.FormattingEnabled = True
+        cb_rivales.Location = New Point(535, 131)
+        cb_rivales.Name = "cb_rivales"
+        cb_rivales.Size = New Size(229, 50)
+        cb_rivales.TabIndex = 26
+        ' 
+        ' lbl_Resultado
+        ' 
+        lbl_Resultado.AutoSize = True
+        lbl_Resultado.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl_Resultado.ForeColor = Color.Red
+        lbl_Resultado.Location = New Point(316, 336)
+        lbl_Resultado.Name = "lbl_Resultado"
+        lbl_Resultado.Size = New Size(258, 42)
+        lbl_Resultado.TabIndex = 27
+        lbl_Resultado.Text = "RESULTADO"
+        lbl_Resultado.Visible = False
+        ' 
         ' IniciarBatalla
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        AutoValidate = AutoValidate.EnablePreventFocusChange
         ClientSize = New Size(887, 534)
+        Controls.Add(lbl_Resultado)
+        Controls.Add(cb_rivales)
         Controls.Add(cmd_Atras)
-        Controls.Add(lbl_RivalUsuario)
         Controls.Add(Label3)
         Controls.Add(lbl_TuUsuario)
         Controls.Add(cmd_Iniciar)
         Controls.Add(Label1)
         Name = "IniciarBatalla"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "IniciarBatalla"
         ResumeLayout(False)
         PerformLayout()
@@ -122,6 +140,7 @@ Partial Class IniciarBatalla
     Friend WithEvents cmd_Iniciar As Button
     Friend WithEvents lbl_TuUsuario As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents lbl_RivalUsuario As Label
     Friend WithEvents cmd_Atras As Button
+    Friend WithEvents cb_rivales As ComboBox
+    Friend WithEvents lbl_Resultado As Label
 End Class

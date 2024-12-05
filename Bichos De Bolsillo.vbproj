@@ -14,6 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Recursos\LogoPokemon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Recursos\Tiny5-Regular.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
