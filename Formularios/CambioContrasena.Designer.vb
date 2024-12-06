@@ -28,8 +28,8 @@ Partial Class CambioContrasena
         Label1 = New Label()
         txtContrasenaComf = New TextBox()
         Label3 = New Label()
-        cmdCancelar = New Button()
         cmdAceptar = New Button()
+        cmdCancelar = New Button()
         SuspendLayout()
         ' 
         ' txtContrasenaActual
@@ -44,10 +44,10 @@ Partial Class CambioContrasena
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(37, 37)
         Label2.Name = "Label2"
-        Label2.Size = New Size(143, 20)
+        Label2.Size = New Size(181, 22)
         Label2.TabIndex = 0
         Label2.Text = "Contraseña actual:"
         ' 
@@ -63,10 +63,10 @@ Partial Class CambioContrasena
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(37, 110)
         Label1.Name = "Label1"
-        Label1.Size = New Size(142, 20)
+        Label1.Size = New Size(179, 22)
         Label1.TabIndex = 0
         Label1.Text = "Nueva contraseña:"
         ' 
@@ -82,27 +82,16 @@ Partial Class CambioContrasena
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(37, 185)
         Label3.Name = "Label3"
-        Label3.Size = New Size(213, 20)
+        Label3.Size = New Size(272, 22)
         Label3.TabIndex = 0
         Label3.Text = "Confirmar nueva contraseña:"
         ' 
-        ' cmdCancelar
-        ' 
-        cmdCancelar.Font = New Font("Microsoft Sans Serif", 10F)
-        cmdCancelar.Location = New Point(167, 267)
-        cmdCancelar.Margin = New Padding(3, 2, 3, 2)
-        cmdCancelar.Name = "cmdCancelar"
-        cmdCancelar.Size = New Size(103, 29)
-        cmdCancelar.TabIndex = 5
-        cmdCancelar.Text = "Cancelar"
-        cmdCancelar.UseVisualStyleBackColor = True
-        ' 
         ' cmdAceptar
         ' 
-        cmdAceptar.Font = New Font("Microsoft Sans Serif", 10F)
+        cmdAceptar.Font = New Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cmdAceptar.Location = New Point(58, 267)
         cmdAceptar.Margin = New Padding(3, 2, 3, 2)
         cmdAceptar.Name = "cmdAceptar"
@@ -110,6 +99,17 @@ Partial Class CambioContrasena
         cmdAceptar.TabIndex = 4
         cmdAceptar.Text = "Aceptar"
         cmdAceptar.UseVisualStyleBackColor = True
+        ' 
+        ' cmdCancelar
+        ' 
+        cmdCancelar.Font = New Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cmdCancelar.Location = New Point(167, 267)
+        cmdCancelar.Margin = New Padding(3, 2, 3, 2)
+        cmdCancelar.Name = "cmdCancelar"
+        cmdCancelar.Size = New Size(103, 29)
+        cmdCancelar.TabIndex = 5
+        cmdCancelar.Text = "Cancelar"
+        cmdCancelar.UseVisualStyleBackColor = True
         ' 
         ' CambioContrasena
         ' 
@@ -137,6 +137,6 @@ Partial Class CambioContrasena
     Friend WithEvents Label1 As Label
     Friend WithEvents txtContrasenaComf As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents cmdCancelar As Button
     Friend WithEvents cmdAceptar As Button
+    Friend WithEvents cmdCancelar As Button
 End Class

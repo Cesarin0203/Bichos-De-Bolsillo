@@ -35,7 +35,7 @@ Partial Class RegistroUsuario
         ' 
         ' cmdCancelar
         ' 
-        cmdCancelar.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdCancelar.Font = New Font("Snap ITC", 9F)
         cmdCancelar.Location = New Point(170, 244)
         cmdCancelar.Margin = New Padding(3, 2, 3, 2)
         cmdCancelar.Name = "cmdCancelar"
@@ -55,7 +55,7 @@ Partial Class RegistroUsuario
         ' 
         ' cmdAceptar
         ' 
-        cmdAceptar.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmdAceptar.Font = New Font("Snap ITC", 9F)
         cmdAceptar.Location = New Point(61, 244)
         cmdAceptar.Margin = New Padding(3, 2, 3, 2)
         cmdAceptar.Name = "cmdAceptar"
@@ -84,20 +84,20 @@ Partial Class RegistroUsuario
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(38, 97)
         Label2.Name = "Label2"
-        Label2.Size = New Size(96, 20)
+        Label2.Size = New Size(118, 22)
         Label2.TabIndex = 7
         Label2.Text = "Contraseña:"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(40, 33)
         Label1.Name = "Label1"
-        Label1.Size = New Size(147, 20)
+        Label1.Size = New Size(185, 22)
         Label1.TabIndex = 8
         Label1.Text = "Nombre de usuario:"
         ' 
@@ -111,10 +111,10 @@ Partial Class RegistroUsuario
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(40, 162)
         Label3.Name = "Label3"
-        Label3.Size = New Size(161, 20)
+        Label3.Size = New Size(197, 22)
         Label3.TabIndex = 15
         Label3.Text = "Fecha de nacimiento:"
         ' 

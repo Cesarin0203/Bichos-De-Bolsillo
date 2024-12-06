@@ -105,6 +105,7 @@ Partial Class InicioSesion
         txt_Contrasena.Size = New Size(258, 23)
         txt_Contrasena.TabIndex = 2
         txt_Contrasena.TipoValidacion = TextBoxPokemon.TipoValidacionTextbox.Contrasena
+        txt_Contrasena.UseSystemPasswordChar = True
         ' 
         ' txt_Usuario
         ' 

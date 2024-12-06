@@ -45,7 +45,7 @@ Partial Class Configuracion
         ' 
         Label1.BackColor = Color.Transparent
         Label1.FlatStyle = FlatStyle.Flat
-        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Red
         Label1.Location = New Point(188, 9)
         Label1.Name = "Label1"
@@ -60,7 +60,7 @@ Partial Class Configuracion
         cmd_Atras.BackColor = Color.Transparent
         cmd_Atras.FlatAppearance.BorderSize = 0
         cmd_Atras.FlatStyle = FlatStyle.Flat
-        cmd_Atras.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Atras.Font = New Font("Snap ITC", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cmd_Atras.ForeColor = SystemColors.ActiveCaptionText
         cmd_Atras.Location = New Point(12, 12)
         cmd_Atras.Name = "cmd_Atras"
@@ -72,6 +72,7 @@ Partial Class Configuracion
         ' TabControl1
         ' 
         TabControl1.Controls.Add(tbCuenta)
+        TabControl1.Font = New Font("Snap ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TabControl1.Location = New Point(12, 48)
         TabControl1.Name = "TabControl1"
         TabControl1.SelectedIndex = 0
@@ -91,10 +92,10 @@ Partial Class Configuracion
         tbCuenta.Controls.Add(lbIdJugador)
         tbCuenta.Controls.Add(txtNombreUsuario)
         tbCuenta.Controls.Add(Label2)
-        tbCuenta.Location = New Point(4, 24)
+        tbCuenta.Location = New Point(4, 26)
         tbCuenta.Name = "tbCuenta"
         tbCuenta.Padding = New Padding(3)
-        tbCuenta.Size = New Size(554, 362)
+        tbCuenta.Size = New Size(554, 360)
         tbCuenta.TabIndex = 0
         tbCuenta.Text = "Cuenta"
         tbCuenta.UseVisualStyleBackColor = True
@@ -102,30 +103,30 @@ Partial Class Configuracion
         ' lbDerrotas
         ' 
         lbDerrotas.AutoSize = True
-        lbDerrotas.Font = New Font("Microsoft Sans Serif", 12F)
+        lbDerrotas.Font = New Font("Snap ITC", 12F)
         lbDerrotas.Location = New Point(21, 311)
         lbDerrotas.Name = "lbDerrotas"
-        lbDerrotas.Size = New Size(84, 20)
+        lbDerrotas.Size = New Size(110, 22)
         lbDerrotas.TabIndex = 0
         lbDerrotas.Text = "Derrotas - "
         ' 
         ' lbVictorias
         ' 
         lbVictorias.AutoSize = True
-        lbVictorias.Font = New Font("Microsoft Sans Serif", 12F)
+        lbVictorias.Font = New Font("Snap ITC", 12F)
         lbVictorias.Location = New Point(21, 277)
         lbVictorias.Name = "lbVictorias"
-        lbVictorias.Size = New Size(83, 20)
+        lbVictorias.Size = New Size(115, 22)
         lbVictorias.TabIndex = 0
         lbVictorias.Text = "Victorias - "
         ' 
         ' lbFechaReg
         ' 
         lbFechaReg.AutoSize = True
-        lbFechaReg.Font = New Font("Microsoft Sans Serif", 12F)
+        lbFechaReg.Font = New Font("Snap ITC", 12F)
         lbFechaReg.Location = New Point(21, 244)
         lbFechaReg.Name = "lbFechaReg"
-        lbFechaReg.Size = New Size(146, 20)
+        lbFechaReg.Size = New Size(191, 22)
         lbFechaReg.TabIndex = 0
         lbFechaReg.Text = "Fecha de registro - "
         ' 
@@ -167,20 +168,20 @@ Partial Class Configuracion
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Microsoft Sans Serif", 12F)
+        Label3.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(21, 87)
         Label3.Name = "Label3"
-        Label3.Size = New Size(157, 20)
+        Label3.Size = New Size(191, 22)
         Label3.TabIndex = 0
         Label3.Text = "Fecha de nacimiento"
         ' 
         ' lbIdJugador
         ' 
         lbIdJugador.AutoSize = True
-        lbIdJugador.Font = New Font("Microsoft Sans Serif", 12F)
+        lbIdJugador.Font = New Font("Snap ITC", 12F)
         lbIdJugador.Location = New Point(21, 208)
         lbIdJugador.Name = "lbIdJugador"
-        lbIdJugador.Size = New Size(118, 20)
+        lbIdJugador.Size = New Size(153, 22)
         lbIdJugador.TabIndex = 0
         lbIdJugador.Text = "ID de jugador - "
         ' 
@@ -195,10 +196,10 @@ Partial Class Configuracion
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12F)
+        Label2.Font = New Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(21, 18)
         Label2.Name = "Label2"
-        Label2.Size = New Size(143, 20)
+        Label2.Size = New Size(179, 22)
         Label2.TabIndex = 0
         Label2.Text = "Nombre de usuario"
         ' 
