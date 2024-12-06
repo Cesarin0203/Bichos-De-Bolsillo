@@ -34,11 +34,11 @@ Partial Class IniciarBatalla
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Red
-        Label1.Location = New Point(330, 50)
+        Label1.Location = New Point(363, 50)
         Label1.Name = "Label1"
-        Label1.Size = New Size(213, 42)
+        Label1.Size = New Size(161, 37)
         Label1.TabIndex = 0
         Label1.Text = "LUCHA!!!" & vbCrLf
         ' 
@@ -46,9 +46,9 @@ Partial Class IniciarBatalla
         ' 
         cmd_Iniciar.FlatAppearance.BorderSize = 0
         cmd_Iniciar.FlatStyle = FlatStyle.Flat
-        cmd_Iniciar.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Iniciar.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Iniciar.ForeColor = Color.Red
-        cmd_Iniciar.Location = New Point(375, 443)
+        cmd_Iniciar.Location = New Point(391, 443)
         cmd_Iniciar.Name = "cmd_Iniciar"
         cmd_Iniciar.Size = New Size(105, 40)
         cmd_Iniciar.TabIndex = 21
@@ -58,10 +58,10 @@ Partial Class IniciarBatalla
         ' lbl_TuUsuario
         ' 
         lbl_TuUsuario.AutoSize = True
-        lbl_TuUsuario.Font = New Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbl_TuUsuario.Location = New Point(164, 131)
+        lbl_TuUsuario.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_TuUsuario.Location = New Point(160, 205)
         lbl_TuUsuario.Name = "lbl_TuUsuario"
-        lbl_TuUsuario.Size = New Size(160, 42)
+        lbl_TuUsuario.Size = New Size(128, 37)
         lbl_TuUsuario.TabIndex = 22
         lbl_TuUsuario.Text = "Usuario"
         ' 
@@ -69,11 +69,11 @@ Partial Class IniciarBatalla
         ' 
         Label3.AutoSize = True
         Label3.BackColor = SystemColors.Control
-        Label3.Font = New Font("Showcard Gothic", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Microsoft Sans Serif", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.Goldenrod
-        Label3.Location = New Point(348, 172)
+        Label3.Location = New Point(356, 172)
         Label3.Name = "Label3"
-        Label3.Size = New Size(162, 119)
+        Label3.Size = New Size(175, 108)
         Label3.TabIndex = 23
         Label3.Text = "VS"
         ' 
@@ -83,7 +83,7 @@ Partial Class IniciarBatalla
         cmd_Atras.BackColor = Color.Transparent
         cmd_Atras.FlatAppearance.BorderSize = 0
         cmd_Atras.FlatStyle = FlatStyle.Flat
-        cmd_Atras.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Atras.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Atras.ForeColor = Color.Black
         cmd_Atras.Location = New Point(12, 12)
         cmd_Atras.Name = "cmd_Atras"
@@ -97,21 +97,21 @@ Partial Class IniciarBatalla
         cb_rivales.BackColor = SystemColors.Control
         cb_rivales.DropDownStyle = ComboBoxStyle.DropDownList
         cb_rivales.FlatStyle = FlatStyle.System
-        cb_rivales.Font = New Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cb_rivales.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cb_rivales.FormattingEnabled = True
-        cb_rivales.Location = New Point(535, 131)
+        cb_rivales.Location = New Point(566, 202)
         cb_rivales.Name = "cb_rivales"
-        cb_rivales.Size = New Size(229, 50)
+        cb_rivales.Size = New Size(229, 45)
         cb_rivales.TabIndex = 26
         ' 
         ' lbl_Resultado
         ' 
         lbl_Resultado.AutoSize = True
-        lbl_Resultado.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl_Resultado.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbl_Resultado.ForeColor = Color.Red
-        lbl_Resultado.Location = New Point(316, 336)
+        lbl_Resultado.Location = New Point(333, 336)
         lbl_Resultado.Name = "lbl_Resultado"
-        lbl_Resultado.Size = New Size(258, 42)
+        lbl_Resultado.Size = New Size(221, 37)
         lbl_Resultado.TabIndex = 27
         lbl_Resultado.Text = "RESULTADO"
         lbl_Resultado.Visible = False

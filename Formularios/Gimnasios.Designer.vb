@@ -52,9 +52,9 @@ Partial Class Gimnasios
         ' 
         Label1.BackColor = Color.Transparent
         Label1.FlatStyle = FlatStyle.Flat
-        Label1.Font = New Font("Snap ITC", 24F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Red
-        Label1.Location = New Point(97, 9)
+        Label1.Location = New Point(154, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(386, 47)
         Label1.TabIndex = 4
@@ -67,7 +67,7 @@ Partial Class Gimnasios
         cmd_Atras.BackColor = Color.Transparent
         cmd_Atras.FlatAppearance.BorderSize = 0
         cmd_Atras.FlatStyle = FlatStyle.Flat
-        cmd_Atras.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Atras.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Atras.ForeColor = SystemColors.ActiveCaptionText
         cmd_Atras.Location = New Point(2, 12)
         cmd_Atras.Name = "cmd_Atras"
@@ -141,11 +141,11 @@ Partial Class Gimnasios
         liderar.BackColor = Color.Transparent
         liderar.FlatAppearance.BorderSize = 0
         liderar.FlatStyle = FlatStyle.System
-        liderar.Font = New Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        liderar.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         liderar.ForeColor = SystemColors.ActiveCaptionText
-        liderar.Location = New Point(158, 463)
+        liderar.Location = New Point(236, 463)
         liderar.Name = "liderar"
-        liderar.Size = New Size(267, 30)
+        liderar.Size = New Size(189, 30)
         liderar.TabIndex = 11
         liderar.Text = "Liderar Nuevo Gimnasio"
         liderar.UseVisualStyleBackColor = False

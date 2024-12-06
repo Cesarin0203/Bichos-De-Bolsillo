@@ -20,4 +20,7 @@
         End If
     End Sub
 
+    Private Sub RegistroUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lbConnectionStatus.Text = "Conexión establecida con el servidor"
+    End Sub
 End Class

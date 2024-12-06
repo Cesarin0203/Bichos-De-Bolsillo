@@ -2,11 +2,11 @@
     Private Sub PantallaPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lbl_Bienvenida.Text = "Hola, " & Usuario.UsuarioApp
     End Sub
+
     Private Sub OnFormClose(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If MessageBox.Show("Desea salir de la aplicacion", "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No Then
             e.Cancel = True
         Else
-            'My.Forms.MenuPrincipal.Show()
             My.Forms.MenuPrincipal.Close()
         End If
     End Sub

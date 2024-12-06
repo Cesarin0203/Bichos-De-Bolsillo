@@ -41,7 +41,7 @@ Partial Class Pokedex
         Button1.BackColor = Color.Transparent
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.Black
         Button1.Location = New Point(12, 12)
         Button1.Name = "Button1"
@@ -54,9 +54,9 @@ Partial Class Pokedex
         ' 
         Label1.BackColor = Color.Transparent
         Label1.FlatStyle = FlatStyle.Flat
-        Label1.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Red
-        Label1.Location = New Point(106, 9)
+        Label1.Location = New Point(500, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(186, 49)
         Label1.TabIndex = 1

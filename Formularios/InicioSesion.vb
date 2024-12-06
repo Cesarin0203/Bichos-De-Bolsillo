@@ -1,4 +1,5 @@
 ﻿Public Class InicioSesion
+    Public Shared OpenPantallaPrincipal As PantallaPrincipal
     Dim query As New Consultas
     Private Sub InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CargaConfiguracion()
@@ -28,7 +29,7 @@
                     lbConnectionStatus.Text = $"Inicio de sesión exitoso. Id = {Usuario.IdApp}"
                     If FormAbierto("PantallaPrincipal") = False Then
                         Dim frm As New PantallaPrincipal
-                        'frm.MdiParent = My.Forms.MenuPrincipal
+                        OpenPantallaPrincipal = frm
                         frm.Show()
                         Me.Close()
                         My.Forms.MenuPrincipal.Hide()

@@ -27,6 +27,10 @@ Public Class Consultas
         Return tabla
     End Function
 
+    Public Function EliminarUsuario(ByVal idUsuario As Integer) As Integer
+        Return lConexion.Comando_Query($"delete from admin.Usuario where id = {idUsuario}")
+    End Function
+
     Public Function ModificarContrasena(ByVal idUsuario As String, ByVal nuevaContra As String) As Integer
         Return lConexion.Comando_Query($"Update admin.Usuario set contrasena = '{nuevaContra}' where id = {idUsuario}")
     End Function

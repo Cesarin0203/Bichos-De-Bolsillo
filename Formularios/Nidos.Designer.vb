@@ -64,9 +64,9 @@ Partial Class Nidos
         ' 
         Label1.BackColor = Color.Transparent
         Label1.FlatStyle = FlatStyle.Flat
-        Label1.Font = New Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Red
-        Label1.Location = New Point(106, 7)
+        Label1.Location = New Point(314, 7)
         Label1.Name = "Label1"
         Label1.Size = New Size(128, 49)
         Label1.TabIndex = 16
@@ -79,7 +79,7 @@ Partial Class Nidos
         cmd_Atras.BackColor = Color.Transparent
         cmd_Atras.FlatAppearance.BorderSize = 0
         cmd_Atras.FlatStyle = FlatStyle.Flat
-        cmd_Atras.Font = New Font("Snap ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        cmd_Atras.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         cmd_Atras.ForeColor = Color.Black
         cmd_Atras.Location = New Point(12, 10)
         cmd_Atras.Name = "cmd_Atras"

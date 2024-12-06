@@ -83,4 +83,24 @@ Public Class Configuracion
             MsgBox(ex.Message, "Advertencia", MessageBoxButtons.OK)
         End Try
     End Sub
+
+    Private Sub cmdEliminarUsuario_Click(sender As Object, e As EventArgs) Handles cmdEliminarUsuario.Click
+        If MessageBox.Show("¿Está seguro que desea eliminar su cuenta?" & vbLf & "Esta acción es irreversible", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Try
+                query.EliminarUsuario(Usuario.IdApp)
+                MsgBox("La cuenta ha sido borrada exitosamente.", MessageBoxButtons.OK)
+                Usuario.clear()
+
+                If InicioSesion.OpenPantallaPrincipal IsNot Nothing Then
+                    InicioSesion.OpenPantallaPrincipal.Close()
+                    InicioSesion.OpenPantallaPrincipal = Nothing ' Clean up the reference
+                End If
+
+                My.Forms.MenuPrincipal.Show()
+                Me.Close()
+            Catch ex As Exception
+                MsgBox("Ocurrió un error eliminar la cuenta.", MsgBoxStyle.Information, "Error")
+            End Try
+        End If
+    End Sub
 End Class
